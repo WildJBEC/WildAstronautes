@@ -66,47 +66,42 @@ body {
 /* Visual */
 }
 
+.Navigation__mobile {
+  display: flex;
+  margin-top: .4rem;
+  text-decoration: none;
 
+}
 
+.Navigation__list {
+  /* Box model */
+  display: flex;
+  list-style: none;
+  flex-direction: row;
 
+}
+
+.Navigation__item {
+  /* Box model */
+  margin-left: 2rem;
+
+  /* Typograhpy */
+  font-size: .9rem;
+
+  /* Visual */
+  text-transform: uppercase;
+}
 
 .Navigation__link {
   /* Visual */
   color: #444444;
   text-decoration: none;
 }
-.Navigation ul {
-    background-color: #E84545;
-    display: block;
-    height: 0;
-    list-style-type: none;
-    opacity: 0;
-    text-align: center;
-    transition: all 1s ease;
-    width: 100%;
-    visibility: hidden;
-  }
-  .Navigation li {
-    border-bottom: 2px solid #53354A;
-    color: #53354A;
-    display: block;
-    font-size: 1.5em;
-    padding: 2em 0;
-  }
-  .Navigation #menu-toggle:checked ~ ul {
-    opacity: 1;
-    height: 100vh;
-    visibility: visible;
-  }
-  .Navigation .label-toggle {
-    background: linear-gradient(to bottom, #E84545 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%);
-    cursor: pointer;
-    display: block;
-    float: right;
-    height: 35px;
-    margin-top: 1em;
-    width: 35px;
-  }
+
+.Navigation__item--active .Navigation__link {
+  color: #1A4875;
+  border-bottom: 2px solid #1A4875;
+}
 
 /**** Section ****/
 .Section {
@@ -288,7 +283,11 @@ body {
 
 /**** Footer ****/
 .Footer {
-
+  background-color: #1A4875;
+  color: white;
+  display: flex;
+  padding: 0 1rem;
+  font-family: 'Montserrat';
 }
 
 @media (min-width: 26em){
@@ -327,53 +326,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-  }
-
-  #menu-toggle {display: none;}
-
-  .label-toggle {display: none;}
-
-  .Navigation__list {
-    /* Box model */
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    visibility: visible;;
-  }
-
-  .Navigation__item {
-    /* Box model */
-    margin-left: 2rem;
-
-    /* Typograhpy */
-    font-size: .9rem;
-
-    /* Visual */
-    text-transform: uppercase;
-  }
-
-  .Navigation ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    width: 50%;
-  }
-.Navigation ul a {
-    color: #E84545;
-    text-decoration: none;
-    transition: all .5s ease;
-  }
-  .Navigation ul a:hover {
-    color: #903749;
-  }
-  .Navigation li {
-    display: inline-block;
-  }
-  .Navigation #menu-toggle {
-    display: none;
-  }
-  .Navigation .label-toggle {
-    display: none;
+    max-width: 64rem;
   }
 
 }
