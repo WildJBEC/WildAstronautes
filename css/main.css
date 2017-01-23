@@ -258,10 +258,10 @@ body {
 
 .Section__img {
   /* Box model */
-  margin: .3rem 3rem 0;
-  -webkit-box-flex: 1.2;
-      -ms-flex: 1.2;
-          flex: 1.2;
+  margin: .3rem 1rem 0;
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
 }
 
 .Section__img img {
@@ -272,11 +272,11 @@ body {
 
 .Section__desc {
   /* Box model */
-  min-width: 26rem;
+  min-width: 20rem;
   max-width: 40rem;
-  -webkit-box-flex: 1.8;
-      -ms-flex: 1.8;
-          flex: 1.8;
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
 
   /* Typography */
   font-size: 1.2rem;
@@ -475,6 +475,19 @@ body {
     padding: 10rem 6rem;
   }
 
+  .Section__img {
+    /* Box model */
+    margin: .3rem 3rem 0;
+    -webkit-box-flex: 1.2;
+        -ms-flex: 1.2;
+            flex: 1.2;
+  }
+
+  .Section__desc {
+    -webkit-box-flex: 1.8;
+        -ms-flex: 1.8;
+            flex: 1.8;
+  }
   .Hero-unit {
     text-align: center;
     padding: 0 2rem 4rem;
