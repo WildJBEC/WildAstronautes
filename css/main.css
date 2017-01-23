@@ -1,3 +1,82 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
 html {
   height: 100%;
   font-size:14px;
@@ -59,16 +138,15 @@ body {
 /* Navigation */
 
 .Navigation {
-/* Box model */
 
-/* Typography */
-
-/* Visual */
 }
 
 .Navigation__mobile {
+  /* Box model */
   display: flex;
   margin-top: .4rem;
+
+  /* Visual */
   text-decoration: none;
 
 }
@@ -99,6 +177,7 @@ body {
 }
 
 .Navigation__item--active .Navigation__link {
+  /* Visual */
   color: #1A4875;
   border-bottom: 2px solid #1A4875;
 }
@@ -114,6 +193,7 @@ body {
 }
 
 .Section--introduction {
+  /* Visual */
   background-color: #ffffff;
 }
 
@@ -126,6 +206,7 @@ body {
 }
 
 .Section--team .Section__title {
+  /* Visual */
   color: #FFFFFF;
 }
 
@@ -145,11 +226,13 @@ body {
 }
 
 .Section__img {
+  /* Box model */
   margin: .3rem 3rem 0;
   flex: 1.2;
 }
 
 .Section__img img {
+  /* Box model */
   max-width: 100%;
   height: auto;
 }
@@ -187,8 +270,8 @@ body {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  color: #ffffff;
   background-image:linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0)),url(../img/article-image.jpg);
+  color: #ffffff;
 }
 
 .Hero-unit__title {
@@ -230,6 +313,7 @@ body {
 }
 
 .Section__row {
+  /* Box model */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -245,43 +329,57 @@ body {
 
 }
 
-
-
 .Biography__figure {
+  /* Box model */
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
 }
 
 .Biography__figure img {
+  /* Visual */
   border-radius: 50%;
 }
 
 .Biography__title {
+  /* Box model */
+  margin: 0;
+
+  /* Typography */
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
-  margin: 0;
   text-align: center;
+
+  /* Visual */
   color: #ffffff;
 }
 
 .Biography__desc {
-  text-align: justify;
-  line-height: 1.4;
-  color: #ffffff;
+  /* Typography */
   font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: justify;
+
+  /* Visual */
+  color: #ffffff;
+
 }
 
 /**** Boutons ****/
 .Button {
-  font-size: .9rem;
-  font-family: Montserrat, sans-serif;
-  text-transform: uppercase;
-  border: 2px solid #1A4875;
-  text-decoration: none;
+  /* Box model */
   padding: 1rem;
   margin-top: 2rem;
+
+  /* Typography */
+  font-size: .9rem;
+  font-family: Montserrat, sans-serif;
+
+  /* Visual */
   color: #1A4875;
+  border: 2px solid #1A4875;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .desktop {
@@ -290,11 +388,16 @@ body {
 
 /**** Footer ****/
 .Footer {
-  background-color: #1A4875;
-  color: white;
+  /* Box model */
   display: flex;
   padding: 0 1rem;
+
+  /* Typography */
   font-family: 'Montserrat';
+
+  /* Visual */
+  background-color: #1A4875;
+  color: white;
 }
 
 @media (min-width: 26em){
@@ -334,6 +437,7 @@ body {
   }
 
   .Section__row {
+    /* Box model */
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -341,17 +445,12 @@ body {
   }
 
 }
-/*scrollup*/
-element.style {
-    display: block;
-}
-
 .thb-scrollup {
   position: fixed;
   right: 30px;
   bottom: 30px;
   z-index: 10000;
-  /*display: none;*/
+  display: block;
   text-indent: 0em;
   text-align: center;
   text-decoration: none;
