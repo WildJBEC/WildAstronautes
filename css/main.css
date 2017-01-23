@@ -238,31 +238,38 @@ body {
 
 .Biography {
   /* Box model */
-  flex: 0 1 25em;
-  margin: 2rem;
-  padding: .4rem 1.4rem;
+  flex: 0 1 27em;
+  margin: 2rem 0;
 
   /* Visual */
-  background-color: #ffffff;
+
 }
 
-.Biography:last-child {
-  margin: 2rem 2rem 0 2rem;
-}
+
 
 .Biography__figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
 
+.Biography__figure img {
+  border-radius: 50%;
 }
 
 .Biography__title {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   margin: 0;
+  text-align: center;
+  color: #ffffff;
 }
 
 .Biography__desc {
   text-align: justify;
   line-height: 1.4;
+  color: #ffffff;
+  font-size: 1.2rem;
 }
 
 /**** Boutons ****/
@@ -310,8 +317,12 @@ body {
     line-height: 1.8rem;
   }
 
-  .Biography:last-child {
-    margin: 2rem;
+  .Biography {
+    margin: 2rem 2rem 0 2rem;
+  }
+
+  .Biography__desc {
+    font-size: 1rem;
   }
 
   .mobile {
