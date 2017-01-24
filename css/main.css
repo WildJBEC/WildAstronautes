@@ -528,6 +528,7 @@ body {
 
     /* Visual */
     text-transform: uppercase;
+    border: 0;
   }
 
   .Navigation__list {
