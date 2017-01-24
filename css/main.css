@@ -59,6 +59,8 @@ body {
 /* Navigation */
 
 .Navigation {
+
+  display:block;
 /* Box model */
 
 /* Typography */
@@ -66,47 +68,51 @@ body {
 /* Visual */
 }
 
-
-
-
-
 .Navigation__link {
   /* Visual */
   color: #444444;
   text-decoration: none;
 }
+
 .Navigation ul {
-    background-color: #E84545;
-    display: block;
-    height: 0;
+    display: flex;
     list-style-type: none;
+    height: 0;
     opacity: 0;
-    text-align: center;
     transition: all 1s ease;
-    width: 100%;
+    width: 13rem;
     visibility: hidden;
+    flex-direction: column;
   }
+
   .Navigation li {
-    border-bottom: 2px solid #53354A;
-    color: #53354A;
+    background-color: #FFFFFF;
+    /*width: 100%; */
     display: block;
-    font-size: 1.5em;
-    padding: 2em 0;
+    font-size: 1em;
+    padding: 1em 1em;
   }
+
   .Navigation #menu-toggle:checked ~ ul {
     opacity: 1;
-    height: 100vh;
     visibility: visible;
+    background-color: #FFFFFF;
   }
+
   .Navigation .label-toggle {
-    background: linear-gradient(to bottom, #E84545 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%);
+    background: linear-gradient(to bottom, #000000 0%, #000000 20%, transparent 20%, transparent 40%, #000000 40%, #000000 60%, transparent 60%, transparent 80%, #000000 80%, #000000 100%);
     cursor: pointer;
     display: block;
     float: right;
-    height: 35px;
+    height: 25px;
     margin-top: 1em;
-    width: 35px;
+    width: 25px;
   }
+
+  .Navigation #menu-toggle{
+    display: none;
+  }
+
 
 /**** Section ****/
 .Section {
@@ -327,6 +333,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    max-width: 64rem;
   }
 
   #menu-toggle {display: none;}
@@ -338,7 +345,7 @@ body {
     display: flex;
     list-style: none;
     flex-direction: row;
-    visibility: visible;;
+    visibility: visible;
   }
 
   .Navigation__item {
@@ -353,21 +360,27 @@ body {
   }
 
   .Navigation ul {
-    display: flex;
-    justify-content: space-between;
+    display: flex;;
+    opacity: 1;
+    visibility: visible;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
     list-style-type: none;
-    width: 50%;
+    width: 100%;
   }
-.Navigation ul a {
-    color: #E84545;
+
+  .Navigation ul a {
+    color: #444444;
     text-decoration: none;
     transition: all .5s ease;
+    display:flex;
   }
   .Navigation ul a:hover {
     color: #903749;
   }
   .Navigation li {
-    display: inline-block;
+    display: flex;
   }
   .Navigation #menu-toggle {
     display: none;
