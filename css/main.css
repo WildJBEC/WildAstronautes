@@ -153,37 +153,6 @@ body {
 
 /* Navigation */
 
-.Navigation {
-
-  display:block;
-/* Box model */
-
-}
-
-.Navigation__mobile {
-  /* Box model */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: .4rem;
-
-  /* Visual */
-  text-decoration: none;
-
-}
-
-.Navigation__list {
-  /* Box model */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .Navigation input {
  display: none;
 }
@@ -246,7 +215,6 @@ body {
   color: #1A4875;
   border-bottom: 2px solid #1A4875;
 }
-
 
 /**** Section ****/
 .Section {
@@ -429,6 +397,7 @@ body {
   margin: 2rem 0;
 
   /* Visual */
+
 }
 
 .Biography__figure {
@@ -580,66 +549,16 @@ body {
   }
 
   .Section__row {
+    /* Box model */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 64rem;
-  }
-
-  #menu-toggle {display: none;}
-
-  .label-toggle {display: none;}
-
-  .Navigation__list {
-    /* Box model */
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    visibility: visible;
-  }
-
-  .Navigation__item {
-    /* Box model */
-    margin-left: 2rem;
-
-    /* Typograhpy */
-    font-size: .9rem;
-
-    /* Visual */
-    text-transform: uppercase;
-  }
-
-  .Navigation ul {
-    display: flex;;
-    opacity: 1;
-    visibility: visible;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-    list-style-type: none;
-    width: 100%;
-  }
-
-  .Navigation ul a {
-    color: #444444;
-    text-decoration: none;
-    transition: all .5s ease;
-    display:flex;
-  }
-  .Navigation ul a:hover {
-    color: #903749;
-  }
-  .Navigation li {
-    display: flex;
-  }
-
-  .Navigation #menu-toggle {
-    display: none;
-  }
-
-  .Navigation .label-toggle {
-    display: none;
-
   }
 
 }
