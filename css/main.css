@@ -1,3 +1,82 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
 html {
   height: 100%;
   font-size:14px;
@@ -12,10 +91,19 @@ html {
 
 body {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
 
   /* Typography */
@@ -35,9 +123,15 @@ body {
 /**** Header ****/
 .Header {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   width: 100%;
   padding: .4rem 2rem;
@@ -63,9 +157,42 @@ body {
   display:block;
 /* Box model */
 
-/* Typography */
+}
 
-/* Visual */
+.Navigation__mobile {
+  /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: .4rem;
+
+  /* Visual */
+  text-decoration: none;
+
+}
+
+.Navigation__list {
+  /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+
+}
+
+.Navigation__item {
+  /* Box model */
+  margin-left: 2rem;
+
+  /* Typograhpy */
+  font-size: .9rem;
+
+  /* Visual */
+  text-transform: uppercase;
 }
 
 .Navigation__link {
@@ -87,7 +214,7 @@ body {
 
   .Navigation li {
     background-color: #FFFFFF;
-    /*width: 100%; */
+    width: 100%;
     display: block;
     font-size: 1em;
     padding: 1em 1em;
@@ -113,18 +240,34 @@ body {
     display: none;
   }
 
+.Navigation__item--active .Navigation__link {
+  /* Visual */
+  color: #1A4875;
+  border-bottom: 2px solid #1A4875;
+}
+
 
 /**** Section ****/
 .Section {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5rem 2rem;
 }
 
 .Section--introduction {
+  /* Visual */
   background-color: #ffffff;
 }
 
@@ -137,6 +280,7 @@ body {
 }
 
 .Section--team .Section__title {
+  /* Visual */
   color: #FFFFFF;
 }
 
@@ -156,20 +300,26 @@ body {
 }
 
 .Section__img {
-  margin: .3rem 3rem 0;
-  flex: 1.2;
+  /* Box model */
+  margin: .3rem 1rem 0;
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
 }
 
 .Section__img img {
+  /* Box model */
   max-width: 100%;
   height: auto;
 }
 
 .Section__desc {
   /* Box model */
-  min-width: 26rem;
+  min-width: 20rem;
   max-width: 40rem;
-  flex: 1.8;
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
 
   /* Typography */
   font-size: 1.2rem;
@@ -188,9 +338,15 @@ body {
 /* Hero unit */
 .Hero-unit {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   padding: 0 2rem 4rem;
 
@@ -198,8 +354,9 @@ body {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  color: #ffffff;
+  background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,0.9),rgba(0,0,0,0)),url(../img/article-image.jpg);
   background-image:linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0)),url(../img/article-image.jpg);
+  color: #ffffff;
 }
 
 .Hero-unit__title {
@@ -231,61 +388,103 @@ body {
 /**** Articles ****/
 .Container__article {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   /* Visual */
   color: #444444;
 }
 
 .Section__row {
+  /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Biography {
   /* Box model */
-  flex: 0 1 25em;
-  margin: 2rem;
-  padding: .4rem 1.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 27em;
+          flex: 0 1 27em;
+  margin: 2rem 0;
 
   /* Visual */
-  background-color: #ffffff;
-}
-
-.Biography:last-child {
-  margin: 2rem 2rem 0 2rem;
 }
 
 .Biography__figure {
+  /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
 
+.Biography__figure img {
+  /* Visual */
+  border-radius: 50%;
 }
 
 .Biography__title {
+  /* Box model */
+  margin: 0;
+
+  /* Typography */
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
-  margin: 0;
+  text-align: center;
+
+  /* Visual */
+  color: #ffffff;
 }
 
 .Biography__desc {
-  text-align: justify;
+  /* Typography */
+  font-size: 1.2rem;
   line-height: 1.4;
+  text-align: justify;
+
+  /* Visual */
+  color: #ffffff;
+
 }
 
 /**** Boutons ****/
 .Button {
-  font-size: .9rem;
-  font-family: Montserrat, sans-serif;
-  text-transform: uppercase;
-  border: 2px solid #1A4875;
-  text-decoration: none;
+  /* Box model */
   padding: 1rem;
   margin-top: 2rem;
+
+  /* Typography */
+  font-size: .9rem;
+  font-family: Montserrat, sans-serif;
+
+  /* Visual */
   color: #1A4875;
+  border: 2px solid #1A4875;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .desktop {
@@ -294,7 +493,18 @@ body {
 
 /**** Footer ****/
 .Footer {
+  /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1rem;
 
+  /* Typography */
+  font-family: 'Montserrat';
+
+  /* Visual */
+  background-color: #1A4875;
+  color: white;
 }
 
 @media (min-width: 26em){
@@ -307,6 +517,19 @@ body {
     padding: 10rem 6rem;
   }
 
+  .Section__img {
+    /* Box model */
+    margin: .3rem 3rem 0;
+    -webkit-box-flex: 1.2;
+        -ms-flex: 1.2;
+            flex: 1.2;
+  }
+
+  .Section__desc {
+    -webkit-box-flex: 1.8;
+        -ms-flex: 1.8;
+            flex: 1.8;
+  }
   .Hero-unit {
     text-align: center;
     padding: 0 2rem 4rem;
@@ -317,8 +540,12 @@ body {
     line-height: 1.8rem;
   }
 
-  .Biography:last-child {
-    margin: 2rem;
+  .Biography {
+    margin: 2rem 2rem 0 2rem;
+  }
+
+  .Biography__desc {
+    font-size: 1rem;
   }
 
   .mobile {
@@ -326,6 +553,8 @@ body {
   }
 
   .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -382,25 +611,23 @@ body {
   .Navigation li {
     display: flex;
   }
+
   .Navigation #menu-toggle {
     display: none;
   }
+
   .Navigation .label-toggle {
     display: none;
+
   }
 
 }
-/*scrollup*/
-element.style {
-    display: block;
-}
-
 .thb-scrollup {
   position: fixed;
   right: 30px;
   bottom: 30px;
   z-index: 10000;
-  /*display: none;*/
+  display: block;
   text-indent: 0em;
   text-align: center;
   text-decoration: none;
