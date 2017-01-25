@@ -592,10 +592,14 @@ body {
   bottom: 0px;
   left: 0px;
   text-align: center;
+
 }
+
+/* CSS blog */
 
 .Section__articles {
   background-color: #eaeaea;
+  padding: 10rem 2rem;
 }
 
 .Article__list {
@@ -612,5 +616,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 1.5rem 2rem;
-  flex: 0 1 28em;
+  flex: 0 1 25em;
+  padding: 3rem;
+
 }
+.Article__item img {
+  height:340px; }
