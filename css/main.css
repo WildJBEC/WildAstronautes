@@ -616,9 +616,76 @@ body {
   display: flex;
   flex-direction: column;
   margin: 1.5rem 2rem;
-  flex: 0 1 25em;
-  padding: 3rem;
+  flex: 0 1 40em;
+  padding: 1rem;
 
 }
 .Article__item img {
-  height:340px; }
+  width: 100%; }
+
+.Article__partage {
+  display:flex;
+  flex-direction:row;
+  list-style: none;
+  justify-content:center;
+  padding:0;
+}
+
+  /* -----
+SVG Icons - twitter svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+/* -----
+SVG Icons - Facebook svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+/*SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
