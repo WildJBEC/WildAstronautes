@@ -134,7 +134,7 @@ body {
           align-items: center;
   position: fixed;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   padding: .4rem 2rem;
 
   /* Typography */
@@ -160,54 +160,53 @@ body {
 .Navigation__item {
   text-transform: uppercase;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #ccc;
 }
 
 .Navigation__link {
   /* Visual */
-  color: #444444;
+  color: #ffffff;
   text-decoration: none;
 }
 
-  .Navigation__list {
-    position: absolute;
-   width: 51vw;
-   transform: translateX(100%) translateZ(0);
-   transition: transform .2s;
-   will-change: transform;
-   list-style: none;
-   top: 4.2rem;
-   background-color: #fff;
-   padding: 0;
-   right: 0;
+.Navigation__list {
+  position: absolute;
+  width: 51vw;
+  transform: translateX(100%) translateZ(0);
+  transition: transform .2s;
+  will-change: transform;
+  list-style: none;
+  top: 4.1rem;
+  background-color: rgba(26, 72, 117, 0.8);
+  padding: 0;
+  right: 0;
+  margin: 0;
+}
+/* here's goes the slide effect */
+input:checked ~ .Navigation__list {
+  transform: translateX(0);
+}
 
-  }
-  /* here's goes the slide effect */
-  input:checked ~ .Navigation__list {
-    transform: translateX(0);
-  }
-
-  /* Button deco */
-  .nav-button {
-    display: block;
-    position: absolute;
-    top: 1.2rem; right: 1rem;
-    z-index: 1;
-    height: 2.5rem;
-    width: 3rem;
-    background-color: transparent;
-    background-image: linear-gradient(to right, #ccc, #ccc),
-      linear-gradient(to right, #ccc, #ccc),
-      linear-gradient(to right, #ccc, #ccc);
-    background-position: center top, center, center bottom;
-    background-repeat: no-repeat;
-    background-size: 5rem .5rem;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    cursor: pointer;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
-  }
+/* Button deco */
+.nav-button {
+  display: block;
+  position: absolute;
+  top: 1.4rem;
+  right: 1rem;
+  z-index: 1;
+  height: 1.3rem;
+  width: 3rem;
+  background-color: transparent;
+  background-image: linear-gradient(to right, #ccc, #ccc),
+    linear-gradient(to right, #ccc, #ccc),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: center top, center, center bottom;
+  background-repeat: no-repeat;
+  background-size: 2rem .3rem;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 .Navigation__item--active .Navigation__link {
@@ -545,7 +544,14 @@ body {
     width: 100%;
     padding: 0;
     transform: none;
+    background-color: #ffffff;
 
+  }
+
+  .Navigation__link {
+    /* Visual */
+    color: #444444;
+    text-decoration: none;
   }
 
   .Section__row {
@@ -560,8 +566,8 @@ body {
             justify-content: center;
     max-width: 64rem;
   }
-
 }
+
 .thb-scrollup {
   position: fixed;
   right: 30px;
