@@ -656,7 +656,38 @@ SVG Icons - twitter svgicons.sparkk.fr
   stroke: #4691f6;
   stroke-width: 1;
 }
+=======
+}
+.Article__item img {
+  width: 100%; }
 
+.Article__partage {
+  display:flex;
+  flex-direction:row;
+  list-style: none;
+  justify-content:center;
+  padding:0;
+}
+
+  /* -----
+SVG Icons - twitter svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
 /* -----
 SVG Icons - Facebook svgicons.sparkk.fr
 ----- */
