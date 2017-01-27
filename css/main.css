@@ -120,6 +120,10 @@ body {
   width: 100%;
 }
 
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /**** Header ****/
 .Header {
   /* Box model */
@@ -134,7 +138,6 @@ body {
           align-items: center;
   position: fixed;
   width: 100%;
-  height: 4rem;
   padding: .4rem 2rem;
 
   /* Typography */
@@ -175,7 +178,7 @@ body {
   transition: transform .2s;
   will-change: transform;
   list-style: none;
-  top: 4.1rem;
+  top: 5rem;
   background-color: rgba(26, 72, 117, 0.8);
   padding: 0;
   right: 0;
@@ -190,7 +193,7 @@ input:checked ~ .Navigation__list {
 .nav-button {
   display: block;
   position: absolute;
-  top: 1.4rem;
+  top: 2rem;
   right: 1rem;
   z-index: 1;
   height: 1.3rem;
@@ -258,7 +261,6 @@ input:checked ~ .Navigation__list {
   margin-bottom: 2rem;
 
   /* Typography */
-  font-family: Montserrat, sans-serif;
   font-size: 1.8rem;
   text-align: center;
   text-transform: uppercase;
@@ -334,7 +336,6 @@ input:checked ~ .Navigation__list {
   max-width: 30rem;
 
   /* Typography */
-  font-family: Montserrat, sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
@@ -420,7 +421,6 @@ input:checked ~ .Navigation__list {
   margin: 0;
 
   /* Typography */
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   text-align: center;
 
@@ -447,7 +447,7 @@ input:checked ~ .Navigation__list {
 
   /* Typography */
   font-size: .9rem;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   /* Visual */
   color: #1A4875;
@@ -470,6 +470,198 @@ input:checked ~ .Navigation__list {
   /* Visual */
   background-color: #1A4875;
   color: white;
+}
+
+.thb-scrollup {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 10000;
+  display: block;
+  text-indent: 0em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  padding-top: 7px;
+  height: 32px;
+  width: 32px;
+  color: #bbbbbb;
+  color: rgba(0, 0, 0, 0.4);
+  border: 2px solid;
+  border-radius: 4px;
+ }
+.thb-scrollup:hover {
+  color: black;
+}
+.thb-scrollup:after {
+  font-size: 22px;
+  line-height: 32px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+
+}
+
+/* CSS blog */
+
+.Section__articles {
+  background: url('../img/background-team.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 4rem 1rem;
+}
+
+.Article__list {
+  max-width: 80rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.Article__item {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem .4rem;
+  flex: 0 1 28em;
+  padding: 1rem;
+}
+
+.Article__title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+
+.Article__link {
+  text-decoration: none;
+  color: #1A4875;
+}
+
+.Article__content {
+  padding: 1rem .2rem;
+
+}
+
+.Article__desc {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: .4rem 0;
+}
+
+.Article__figure {
+  padding: 0;
+  margin:0;
+  height: 14rem;
+  overflow: hidden;
+}
+
+.Article__item img {
+  width: 100%;
+}
+
+.Article__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Article__partage {
+  display:flex;
+  flex-direction:row;
+  list-style: none;
+  justify-content: flex-end;
+  padding:0;
+  margin-left: .2rem;
+}
+
+.Article__button {
+  font-size: .8rem;
+  padding: .6rem;
+  margin: 0;
+}
+
+.Article__button:hover {
+  background-color: #1A4875;
+  color: #ffffff;
+}
+
+.Partage__item {
+  padding: .6rem .7rem;
+  background-color: #444444;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 .2rem;
+  display: flex;
+  align-items: center;
+}
+
+.Partage__item:first-child {
+  margin-left: 0;
+}
+
+.Partage__item:last-child {
+  margin-right: 0;
+}
+
+.Partage__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.Partage__item--facebook {
+  background-color: #3b5998;
+}
+
+.Partage__item--twitter {
+  background-color: #1da1f2;
+}
+
+.Partage__socialname {
+  padding: 0 .3rem;
+  font-size: .7rem;
+  text-transform: uppercase;
+}
+
+  /* -----
+SVG Icons - twitter svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ffffff;
+}
+
+}
+.Article__item img {
+  width: 100%; }
+
+
+  /* -----
+SVG Icons - twitter svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ffffff;
 }
 
 @media (min-width: 26em){
@@ -520,7 +712,7 @@ input:checked ~ .Navigation__list {
 
   .Navigation__item {
     /* Box model */
-    margin-left: 2rem;
+    margin-left: 1rem;
 
     /* Typograhpy */
     font-size: .9rem;
@@ -528,6 +720,10 @@ input:checked ~ .Navigation__list {
     /* Visual */
     text-transform: uppercase;
     border: 0;
+  }
+
+  .Navigation__item:first-child {
+    margin-left: 0;
   }
 
   .Navigation__list {
@@ -566,163 +762,7 @@ input:checked ~ .Navigation__list {
             justify-content: center;
     max-width: 64rem;
   }
-}
-
-.thb-scrollup {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  z-index: 10000;
-  display: block;
-  text-indent: 0em;
-  text-align: center;
-  text-decoration: none;
-  font-size: 50px;
-  padding-top: 7px;
-  height: 32px;
-  width: 32px;
-  color: #bbbbbb;
-  color: rgba(0, 0, 0, 0.4);
-  border: 2px solid;
-  border-radius: 4px;
- }
-.thb-scrollup:hover {
-  color: black;
-}
-.thb-scrollup:after {
-  font-size: 22px;
-  line-height: 32px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  text-align: center;
-
-}
-
-/* CSS blog */
-
-.Section__articles {
-  background-color: #eaeaea;
-  padding: 10rem 2rem;
-}
-
-.Article__list {
-  max-width: 80rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.Article__item {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  margin: 1.5rem 2rem;
-  flex: 0 1 40em;
-  padding: 1rem;
-
-}
-.Article__item img {
-  width: 100%; }
-
-.Article__partage {
-  display:flex;
-  flex-direction:row;
-  list-style: none;
-  justify-content:center;
-  padding:0;
-}
-
-  /* -----
-SVG Icons - twitter svgicons.sparkk.fr
------ */
-
-.svg-icon {
-  width: 1em;
-  height: 1em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: #4691f6;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
-}
-=======
-}
-.Article__item img {
-  width: 100%; }
-
-.Article__partage {
-  display:flex;
-  flex-direction:row;
-  list-style: none;
-  justify-content:center;
-  padding:0;
-}
-
-  /* -----
-SVG Icons - twitter svgicons.sparkk.fr
------ */
-
-.svg-icon {
-  width: 1em;
-  height: 1em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: #4691f6;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
-}
-/* -----
-SVG Icons - Facebook svgicons.sparkk.fr
------ */
-
-.svg-icon {
-  width: 1em;
-  height: 1em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: #4691f6;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
-}
-
-/*SVG Icons - svgicons.sparkk.fr
------ */
-
-.svg-icon {
-  width: 1em;
-  height: 1em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: #4691f6;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
+  .Article__item {
+    margin: 1.5rem 2.4rem;
+  }
 }
