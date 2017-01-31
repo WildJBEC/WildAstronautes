@@ -517,14 +517,7 @@ input:checked ~ .Navigation__list {
 /* CSS blog */
 
 .Section__search {
-  /* Box model */
-  height: 4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  /* Visual */
-  background-color: #444444;
+  display: none;
 }
 
 .Section__articles {
@@ -759,7 +752,7 @@ SVG Icons - twitter svgicons.sparkk.fr
   }
 
   .Section__articles {
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .Section__search {
@@ -869,6 +862,81 @@ SVG Icons - twitter svgicons.sparkk.fr
   .Section__fullArticle {
     padding: 0;
   }
+
+  .Section__search {
+    /* Box model */
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -0.1rem;
+
+    /* Visual */
+    background-color: #eaeaea;
+  }
+
+  .Categories__list {
+    /* Box model */
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .Category__item:first-child {
+    margin: 0 .6rem 0 0;
+  }
+
+  .Category__item {
+    margin: 0 .6rem;
+  }
+
+  .Category__link {
+    border-radius: 2px;
+    padding:.4rem .8rem;
+    border: 1px solid #ccc;
+    color: #444444;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    text-decoration: none;
+  }
+
+  .Category__link:hover {
+    border: 1px solid #1A4875;
+    background-color: #1A4875;
+    color: #ffffff;
+  }
+
+  .Category__link--cross {
+    border: 1px solid #bbbbbb;
+    color: #bbbbbb;
+    padding: .1rem .4rem;
+  }
+
+  .Search__block {
+    display: flex;
+  }
+
+  .Search__block input {
+    border-radius: 2px 0 0 2px;
+    border: 0;
+    height: 2rem;
+    width: 14rem;
+    padding: 0.4rem;
+  }
+
+  .Search__block button {
+    height: 2rem;
+    background: #1A4875;
+    border: 0;
+    color: #fff;
+    border-radius: 0 2px 2px 0;
+    width: 6rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }
+
 }
+
 .Partage {display:flex; flex-direction: row; justify-content: space-around;}
 .Reseaux {list-style: none; flex-direction: row; display:flex;}
