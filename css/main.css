@@ -118,6 +118,7 @@ body {
   /* Box model */
   height: 100%;
   width: 100%;
+  margin-top: 10rem;
 }
 
 h1, h2, h3 {
@@ -139,6 +140,7 @@ h1, h2, h3 {
   position: fixed;
   width: 100%;
   padding: .4rem 2rem;
+  margin-top: -5rem;
 
   /* Typography */
   font-family: 'Montserrat', sans-serif;
@@ -319,6 +321,7 @@ input:checked ~ .Navigation__list {
           align-items: center;
   height: 100%;
   padding: 0 2rem 4rem;
+  margin-top: -5rem;
 
   /* Visual */
   background-size: cover;
@@ -451,9 +454,15 @@ input:checked ~ .Navigation__list {
 
   /* Visual */
   color: #1A4875;
-  border: 2px solid #1A4875;
+  border: 2px solid #cccccc;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.Button:hover {
+  color: #ffffff;
+  border: 2px solid #1A4875;
+  background-color: #1A4875;
 }
 
 /**** Footer ****/
@@ -507,40 +516,67 @@ input:checked ~ .Navigation__list {
 
 /* CSS blog */
 
+.Section__search {
+  /* Box model */
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* Visual */
+  background-color: #444444;
+}
+
 .Section__articles {
+  /* Box model */
+  padding: 4rem 1rem;
+
+  /* Visual */
   background: url('../img/background-team.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 4rem 1rem;
 }
 
 .Article__list {
-  max-width: 80rem;
+  /* Box model */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 80rem;
   padding-left: 0;
+
+  /* Visual */
   list-style-type: none;
 }
 
 .Article__item {
-  background-color: #ffffff;
+  /* Box model */
   display: flex;
-  flex-direction: column;
-  margin: 1.5rem .4rem;
   flex: 0 1 28em;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.5rem .4rem;
   padding: 1rem;
+
+  /* Visual */
+  background-color: #ffffff;
 }
 
 .Article__title {
+  /* Box model */
   margin: 0;
+
+  /* Typography */
   font-size: 1.4rem;
 }
 
 
 .Article__link {
+  /* Visual */
   text-decoration: none;
+
+  /* Visual */
   color: #1A4875;
 }
 
@@ -550,12 +586,16 @@ input:checked ~ .Navigation__list {
 }
 
 .Article__desc {
+  /* Typography */
   font-size: 1rem;
   line-height: 1.4;
+
+  /* Box model */
   margin: .4rem 0;
 }
 
 .Article__figure {
+  /* Box model */
   padding: 0;
   margin:0;
   height: 14rem;
@@ -567,37 +607,44 @@ input:checked ~ .Navigation__list {
 }
 
 .Article__footer {
+  /* Boxe model */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .Article__partage {
+  /* Box model */
   display:flex;
   flex-direction:row;
-  list-style: none;
   justify-content: flex-end;
   padding:0;
   margin-left: .2rem;
+
+  /* Visual */
 }
 
 .Article__button {
+  /* Typography */
   font-size: .8rem;
-  padding: .6rem;
-  margin: 0;
-}
 
-.Article__button:hover {
-  background-color: #1A4875;
-  color: #ffffff;
+  /* Box model */
+  margin: 0;
+  padding: .6rem;
 }
 
 .Partage__item {
-  padding: .6rem .7rem;
-  background-color: #444444;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0 .2rem;
+  /* Box model */
   display: flex;
   align-items: center;
+  margin: 0 .2rem;
+
+  /* Visual */
+  background-color: #444444;
+
+  /* Typography */
+  font-family: 'Montserrat', sans-serif;
+
+
 }
 
 .Partage__item:first-child {
@@ -609,8 +656,12 @@ input:checked ~ .Navigation__list {
 }
 
 .Partage__link {
+  /* Box model */
   display: flex;
   align-items: center;
+  padding: .6rem .7rem;
+
+  /* Visual */
   text-decoration: none;
   color: #ffffff;
 }
@@ -624,7 +675,10 @@ input:checked ~ .Navigation__list {
 }
 
 .Partage__socialname {
+  /* Box model */
   padding: 0 .3rem;
+
+  /* Typography */
   font-size: .7rem;
   text-transform: uppercase;
 }
@@ -646,22 +700,7 @@ SVG Icons - twitter svgicons.sparkk.fr
 
 }
 .Article__item img {
-  width: 100%; }
-
-
-  /* -----
-SVG Icons - twitter svgicons.sparkk.fr
------ */
-
-.svg-icon {
-  width: 1em;
-  height: 1em;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: #ffffff;
+  width: 100%;
 }
 
 @media (min-width: 26em){
@@ -672,6 +711,14 @@ SVG Icons - twitter svgicons.sparkk.fr
 
   .Section {
     padding: 10rem 6rem;
+  }
+
+  .Section__articles {
+    padding: 4rem 1rem;
+  }
+
+  .Section__search {
+    padding: 1rem;
   }
 
   .Section__img {
