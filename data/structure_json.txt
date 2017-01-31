@@ -1,0 +1,43 @@
+un article sera composé de :
+
+		- "id"     un nbre séquentiel
+		- "_class_"   catégorie  (voir sérialisation http://sdz.tdct.org/sdz/serialisez-vos-objets-au-format-json.html)
+		- "date_art"   date de l'article NASA
+		- "date_tra"	date traduction FR = parution Blog
+		- "author"  auteur Nasa
+		- "auteur"  traduction Blog
+		- "img"	[      tableau contenant plusieurs photos
+			- "_theme_"  theme de la Photo
+			-"spec" [     tableau contenant différentes tailles pour une meme img = 
+								 [{url1,taill1},{url2,taill2}, ...]
+					- "img_url"   url de la photo
+					- "img_taille"  taille photo
+					]
+			- "img_alt"
+			- "img_caption"
+			- "img_credit"
+			 ]
+		- "art_txt" 
+		- "art_titre"
+		-	"art_liennasa":""
+
+
+	{	"id":"",
+	"_class_":"",
+	"date_art":"",
+	"date_trad":"",
+	"author":"",
+	"auteur":"",
+	"img":[{
+		"_theme_":"",
+		"spec":[
+				{"img_url":"",
+				"img_taille":""}],
+	    "img_alt":"",
+	    "img_caption":"",
+	    "img_credit":""}],
+	"art_txt":"",   
+	"art_titre":"",
+	"art_liennasa":""
+
+}
