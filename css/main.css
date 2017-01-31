@@ -813,3 +813,5 @@ SVG Icons - twitter svgicons.sparkk.fr
     margin: 1.5rem 2.4rem;
   }
 }
+.Partage {display:flex; flex-direction: row; justify-content: space-around;}
+.Reseaux {list-style: none; flex-direction: row; display:flex;}
