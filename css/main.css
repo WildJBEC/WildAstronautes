@@ -731,6 +731,7 @@ SVG Icons - twitter svgicons.sparkk.fr
 .fullArticle__desc {
 	padding: 0 2rem;
 	font-size: 1.3rem;
+  line-height: 1.6;
 }
 
 .fullArticle__img {
@@ -740,6 +741,25 @@ SVG Icons - twitter svgicons.sparkk.fr
 	background-position: center;
 	background-size: cover;
 }
+
+.fullArticle__footer{
+  padding: 0 16rem;
+}
+
+.fullArticle__foot {
+  display: flex;
+  padding-top: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  border-top: 5px solid #eaeaea;
+  margin: 0 0 1rem;
+}
+
+.fullArticle__foot img{
+  margin-left : 0.5rem;
+
+}
+
 
 @media (min-width: 26em){
 
