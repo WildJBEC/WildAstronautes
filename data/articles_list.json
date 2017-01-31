@@ -1,0 +1,37 @@
+[{	"id":"0",
+	"_class_":"",
+	"date_art":"",
+	"date_trad":"",
+	"author":"",
+	"auteur":"",
+	"img":[{
+		"_theme_":"",
+		"spec":[
+				{"img_url":"",
+				"img_taille":""}],
+	    "img_alt":"",
+	    "img_caption":"",
+	    "img_credit":""}],
+	"art_txt":"",   
+	"art_titre":"",
+	"art_liennasa":""
+},
+{	"id":"1",
+	"_class_":"",
+	"date_art":"",
+	"date_trad":"",
+	"author":"",
+	"auteur":"",
+	"img":[{
+		"_theme_":"",
+		"spec":[
+				{"img_url":"",
+				"img_taille":""}],
+	    "img_alt":"",
+	    "img_caption":"",
+	    "img_credit":""}],
+	"art_txt":"",   
+	"art_titre":"NASA’s First Flight With Crew Will Mark Important Step on Journey to Mars",
+	"art_liennasa":""
+}
+]
