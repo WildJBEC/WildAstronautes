@@ -1,0 +1,15 @@
+.Section__fullArticle img{
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+.Section__title{
+	margin: 2rem;
+	text-transform: none;
+}
+
+.Section__date{
+	border-bottom: 2px solid rgb(204, 204, 204);
+	border-top: 2px solid rgb(204, 204, 204);
+}
