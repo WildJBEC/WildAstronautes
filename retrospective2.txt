@@ -1,0 +1,43 @@
+Rétrospective du vendredi 27 janvier 2017
+
+
+Elsa :
+
+Bonjour, nous sommes une équipe de 4 personnes, apprentis à la WildCodeSchool,
+constituée de Bénédicte, Cédric, Jérôme et Elsa (moi-même)
+
+le projet sur lequel nous travaillons actuellement est la création d'un site Web pour l'association d'astronomie WildAstronaut.
+
+Ce projet a une durée prévue de 4 semaines que nous avons découpé en 4 sprints, en se basant sur la méthode agile Scrum.
+
+Nous sommes actuellement à la fin du Second sprint:
+	pour lequel j'ai endossé le rôle de product Owner
+	et Bénédicte celui de ScrumMaster.
+
+Lors de la rétrospective de la semaine dernière nous avions présenté la page d’accueil du site. 
+	(affichage de la page d'accueil)
+
+Je laisse à présent la parole à Cédric pour vous présenter les avancées de la semaine.
+
+
+
+Cédric :
+
+L'aboutissement du second Sprint a été la création de la page Blog et de la page Article
+
+dans le sprint 1 nous avions défini par sketching les structures des pages avec le client.
+
+Voici le résultat de notre travail de la semaine:
+
+	-	page Blog  (affichage de la page Blog)
+	-	page Article (affichage de la page Article)
+	-	aspect Responsive (affichage de la page Blog mini en superposition)
+
+
+
+
+
+
+ProductOwner : Le PO est un membre à part entière de l’équipe Scrum dont la responsabilité principale est de définir un produit qui apportera le maximum de valeur métier aux utilisateurs dans le temps et le budget impartis au projet.
+
+ScrumMaster :
