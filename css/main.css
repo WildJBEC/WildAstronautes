@@ -703,6 +703,51 @@ SVG Icons - twitter svgicons.sparkk.fr
   width: 100%;
 }
 
+/* FULL ARTICLE */
+
+.Section__fullArticle {
+	padding: 0;
+}
+
+.fullArticle__header {
+	padding: 0 2rem;
+	margin: 3rem 0 1rem;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+	text-align: center;
+}
+
+
+.fullArticle__title{
+	margin: 0 0 1rem;
+	color: #1A4875;
+	font-size: 2rem;
+	text-transform: none;
+}
+
+.fullArticle__infos {
+	border-bottom: 5px solid #eaeaea;
+	padding-bottom: 2rem;
+	margin: 0 0 2rem;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+
+}
+
+.fullArticle__desc {
+	padding: 0 2rem;
+	font-size: 1.3rem;
+}
+
+.fullArticle__img {
+	height: 25rem;
+	margin: 0;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
 @media (min-width: 26em){
 
   html {
@@ -811,6 +856,18 @@ SVG Icons - twitter svgicons.sparkk.fr
   }
   .Article__item {
     margin: 1.5rem 2.4rem;
+  }
+
+  .fullArticle__header {
+    padding: 0 16rem;
+  }
+
+  .fullArticle__desc {
+    padding: 0 16rem;
+  }
+
+  .Section__fullArticle {
+    padding: 0;
   }
 }
 .Partage {display:flex; flex-direction: row; justify-content: space-around;}
