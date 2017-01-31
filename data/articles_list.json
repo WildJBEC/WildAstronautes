@@ -17,6 +17,101 @@
 	"art_liennasa":""
 },
 {	"id":"1",
+	"_class_":"Voyage vers Mars",
+	"date_art":"06/01/2017",
+	"date_trad":"31/01/2017",
+	"author":"Gary Daines",
+	"auteur":"Elisa Etcheverry",
+	"img":[{
+		"_theme_":"Orion vaisseau spacial",
+		"spec":[
+				{"img_url":"https://www.nasa.gov/sites/default/files/thumbnails/image/gcd_pcm_feature_photo1.jpg",
+				"img_taille":"489px*275px"}],
+	    "img_alt":"image virtuelle Orion",
+	    "img_caption":"",
+	    "img_credit":""}],
+	"art_txt":"When astronauts are on their first test flight aboard NASA’s Orion spacecraft, which will take them farther into the solar system than humanity has ever traveled before, their mission will be to confirm all of the spacecraft’s systems operate as designed in the actual environment of deep space. After an Orion test campaign that includes ground tests, systems demonstrations on the International Space Station, and uncrewed space test flights, this first crewed test flight will mark a significant step forward on NASA’s Journey to Mars. 
+
+This will be NASA’s first mission with crew in a series of missions in the proving ground, an area of space around the moon where crew can build and test systems needed to prepare for the challenge of missions to Mars. The mission will launch from NASA’s Kennedy Space Center in Florida as early as August 2021. Crew size will be determined closer to launch, but NASA plans to fly up to four astronauts in Orion for each human mission.
+
+“Like every test flight, we will have test objectives for this mission both before and after we commit to going to the moon,” said Bill Hill, deputy associated administrator, Exploration Systems Development, NASA Headquarters in Washington. “It’s just like the Mercury, Gemini, and Apollo programs, which built up and demonstrated their capabilities over a series of missions. During this mission, we have a number of tests designed to demonstrate critical functions, including mission planning, system performance, crew interfaces, and navigation and guidance in deep space.”
+
+Leaving Earth
+
+The mission plan for the flight is built around a profile called a multi-translunar injection (MTLI), or multiple departure burns, and includes a free return trajectory from the moon. Basically, the spacecraft will circle our planet twice while periodically firing its engines to build up enough speed to push it toward the moon before looping back to Earth.  
+
+After launch, the spacecraft and upper stage of the rocket will first orbit Earth twice to ensure its systems are working normally. Orion will reach a circular orbit at an altitude of 100 nautical miles and last 90 minutes. The move or burn to get the spacecraft into a specific orbit around a planet or other body in space is called orbital insertion.
+
+Following the first orbit, the rocket’s powerful exploration upper stage (EUS) and four RL-10 engines will perform an orbital raise, which will place Orion into a highly elliptical orbit around our planet. This is called the partial translunar injection. This second, larger orbit will take approximately 24 hours with Orion flying in an ellipse between 500 and 19,000 nautical miles above Earth. For perspective, the International Space Station orbits Earth from about 250 miles above. 
+
+Once the integrated vehicle completes these two orbits, the EUS will separate from Orion and any payloads selected and mounted inside the rocket’s universal stage adapter will be released. The payloads will then fly on their own to conduct their unique missions.
+
+After the EUS separation, the crew will do a unique test of Orion’s critical systems. They will gather and evaluate engineering data from their day-long orbit before using Orion’s service module to complete a second and final propulsion move called the translunar injection (TLI) burn. This second burn will put Orion on a path toward the moon, and will conclude the “multi-translunar injection” portion of the mission.
+
+“Free” ride home
+
+The TLI will send crew around the backside of the moon where they will ultimately create a figure eight before Orion returns to Earth. Instead of requiring propulsion on the return, the spacecraft will use the moon’s gravitational pull like a slingshot to bring Orion home, which is the free return portion of the trajectory. Crew will fly thousands of miles beyond the moon, which is an average of 230,000 miles beyond the Earth.
+
+A flexible mission length will allow NASA to gather valuable imagery data during daylight for the launch, landing and recovery phases. It will take a minimum of eight days to complete the mission, and pending additional analysis, it may be extended up to 21 days to complete additional flight test objectives.",   
+	"art_titre":"NASA’s First Flight With Crew Will Mark Important Step on Journey to Mars",
+	"art_liennasa":"https://www.nasa.gov/feature/nasa-s-first-flight-with-crew-will-mark-important-step-on-journey-to-mars"
+}
+]
+{	"id":"2",
+	"_class_":"Vie sur d'autres planètes",
+	"date_art":"27/01/2017",
+	"date_trad":"31/01/2017",
+	"author":"Tony Greicius",
+	"auteur":"Regis Millet",
+	"img":[{
+		"_theme_":"Vie sur d'autres planètes",
+		"spec":[
+				{"img_url":"https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/chemistry_main.jpg?itok=vdgV9P54",
+				"img_taille":"498px * 287px"}],
+	    "img_alt":"Lac Mono",
+	    "img_caption":"Mono Lake, California, with salt pillars known as tufas visible. JPL scientists tested new methods for detecting chemical signatures of life in the salty waters here, believing them to be analogs for water on Mars or ocean worlds like Europa.",
+	    "img_credit":"Mono County Tourism"}],
+	"art_txt":"A simple chemistry method could vastly enhance how scientists search for signs of life on other planets.
+
+The test uses a liquid-based technique known as capillary electrophoresis to separate a mixture of organic molecules into its components. It was designed specifically to analyze for amino acids, the structural building blocks of all life on Earth. The method is 10,000 times more sensitive than current methods employed by spacecraft like NASA's Mars Curiosity rover, according to a new study published in Analytical Chemistry. The study was carried out by researchers from NASA's Jet Propulsion Laboratory, Pasadena, California.
+
+One of the key advantages of the authors' new way of using capillary electrophoresis is that the process is relatively simple and easy to automate for liquid samples expected on ocean world missions: it involves combining a liquid sample with a liquid reagent, followed by chemical analysis under conditions determined by the team. By shining a laser across the mixture -- a process known as laser-induced fluorescence detection -- specific molecules can be observed moving at different speeds. They get separated based on how quickly they respond to electric fields.
+
+While capillary electrophoresis has been around since the early 1980s, this is the first time it has been tailored specifically to detect extraterrestrial life on an ocean world, said lead author Jessica Creamer, a postdoctoral scholar at JPL.
+
+Our method improves on previous attempts by increasing the number of amino acids that can be detected in a single run, Creamer said. Additionally, it allows us to detect these amino acids at very low concentrations, even in highly salty samples, with a very simple 'mix and analyze' process.
+
+The researchers used the technique to analyze amino acids present in the salt-rich waters of Mono Lake in California. The lake's exceptionally high alkaline content makes it a challenging habitat for life, and an excellent stand-in for salty waters believed to be on Mars, or the ocean worlds of Saturn's moon Enceladus and Jupiter's moon Europa.
+
+The researchers were able to simultaneously analyze 17 different amino acids, which they are calling the Signature 17 standard. These amino acids were chosen for study because they are the most commonly found on Earth or elsewhere.",   
+	"art_titre":"A New Test for Life on Other Planets",
+	"art_liennasa": "https://www.nasa.gov/feature/jpl/a-new-test-for-life-on-other-planets"
+},
+
+{	"id":"3",
+	"_class_":"Galaxie",
+	"date_art":"27/01/17",
+	"date_trad":"31/01/17",
+	"author":"Karl Hille",
+	"auteur":"Elisa Etcheverry",
+	"img":[{
+		"_theme_":"Galaxie",
+		"spec":[
+				{"img_url":"https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/potw1704a.jpg?itok=Rs9C-CbI",
+				"img_taille":"489px*391px"}],
+	    "img_alt":"Galaxie Canes Venatici",
+	    "img_caption":"",
+	    "img_credit":""}],
+	"art_txt":"The lesser-known constellation of Canes Venatici (The Hunting Dogs), is home to a variety of deep-sky objects — including this beautiful galaxy, known as NGC 4861. Astronomers are still debating on how to classify it. While its physical properties — such as mass, size and rotational velocity — indicate it to be a spiral galaxy, its appearance looks more like a comet with its dense, luminous “head” and dimmer “tail” trailing off. Features more fitting with a dwarf irregular galaxy.
+
+Although small and messy, galaxies like NGC 4861 provide astronomers with interesting opportunities for study. Small galaxies have lower gravitational potentials, which simply means that it takes less energy to move stuff about inside them than it does in other galaxies. As a result, moving in, around, and through such a tiny galaxy is quite easy to do, making them far more likely to be filled with streams and outflows of speedy charged particles known as galactic winds, which can flood such galaxies with little effort.
+
+These galactic winds can be powered by the ongoing process of star formation, which involves huge amounts of energy. New stars are springing into life within the bright, colorful ‘head’ of NGC 4861 and ejecting streams of high-speed particles as they do so, which flood outwards to join the wider galactic wind. While NGC 4861 would be a perfect candidate to study such winds, recent studies did not find any galactic winds in it.",   
+	"art_titre":"Star Birth With a Chance of Winds?",
+	"art_liennasa":"https://www.nasa.gov/image-feature/goddard/2017/star-birth-with-a-chance-of-winds"
+},
+
+[{	"id":"0",
 	"_class_":"",
 	"date_art":"",
 	"date_trad":"",
@@ -31,7 +126,6 @@
 	    "img_caption":"",
 	    "img_credit":""}],
 	"art_txt":"",   
-	"art_titre":"NASA’s First Flight With Crew Will Mark Important Step on Journey to Mars",
+	"art_titre":"",
 	"art_liennasa":""
-}
-]
+},
