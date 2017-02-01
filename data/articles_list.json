@@ -1,5 +1,5 @@
 [{	"id":"0",
-	"_class_":"",
+	"art_theme":"",
 	"date_art":"",
 	"date_trad":"",
 	"author":"",
@@ -17,7 +17,7 @@
 	"art_liennasa":""
 },
 {	"id":"1",
-	"_class_":"Voyage vers Mars",
+	"art_theme":"Voyage vers Mars", "Planètes"
 	"date_art":"06/01/2017",
 	"date_trad":"31/01/2017",
 	"author":"Gary Daines",
@@ -58,7 +58,7 @@ A flexible mission length will allow NASA to gather valuable imagery data during
 }
 ]
 {	"id":"2",
-	"_class_":"Vie sur d'autres planètes",
+	"art_theme":"Vie sur d'autres planètes","Planètes"
 	"date_art":"27/01/2017",
 	"date_trad":"31/01/2017",
 	"author":"Tony Greicius",
@@ -89,7 +89,7 @@ The researchers were able to simultaneously analyze 17 different amino acids, wh
 },
 
 {	"id":"3",
-	"_class_":"Galaxie",
+	"art_theme":"Galaxie",
 	"date_art":"27/01/17",
 	"date_trad":"31/01/17",
 	"author":"Karl Hille",
@@ -112,7 +112,7 @@ These galactic winds can be powered by the ongoing process of star formation, wh
 },
 
 [{	"id":"0",
-	"_class_":"",
+	"art_theme":"",
 	"date_art":"",
 	"date_trad":"",
 	"author":"",
