@@ -2,7 +2,7 @@
 class Article {
 
   constructor(json){
-    this._class_ = json._class_ .toUpperCase();
+    this.art_theme = json.art_theme.toUpperCase();
     this.date_art = json.date_art;
     this.date_trad = json.date_trad;
     this.author = json.author;
