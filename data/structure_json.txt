@@ -1,7 +1,7 @@
 un article sera composé de :
 
 		- "id"     un nbre séquentiel
-		- "_class_"   catégorie  (voir sérialisation http://sdz.tdct.org/sdz/serialisez-vos-objets-au-format-json.html)
+		- "art_theme"   catégorie  (voir sérialisation http://sdz.tdct.org/sdz/serialisez-vos-objets-au-format-json.html)
 		- "date_art"   date de l'article NASA
 		- "date_tra"	date traduction FR = parution Blog
 		- "author"  auteur Nasa
@@ -23,7 +23,7 @@ un article sera composé de :
 
 
 	{	"id":"",
-	"_class_":"",
+	"art_theme":"",
 	"date_art":"",
 	"date_trad":"",
 	"author":"",
