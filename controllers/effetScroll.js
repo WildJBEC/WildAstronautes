@@ -234,7 +234,8 @@ $(function(){
 $(document).ready(function(){
   $("#btn-scrollup").scrollToTop({
     speed:1800,
-    ease:"easeOutBounce",
+    ease:"easeInOutQuad",
+  //ease:"easeOutBounce",  
     start:250});
 });
 
