@@ -726,7 +726,6 @@ SVG Icons - twitter svgicons.sparkk.fr
 	margin: 0 0 2rem;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
-
 }
 
 .fullArticle__desc {
@@ -743,8 +742,14 @@ SVG Icons - twitter svgicons.sparkk.fr
 	background-size: cover;
 }
 
+.desktop{
+
+  display: none;
+
+}
+
 .fullArticle__footer{
-  padding: 0 16rem;
+  padding: 0 2rem;
 }
 
 .fullArticle__foot {
@@ -758,7 +763,6 @@ SVG Icons - twitter svgicons.sparkk.fr
 
 .fullArticle__foot img{
   margin-left : 0.5rem;
-
 }
 
 
@@ -956,6 +960,60 @@ SVG Icons - twitter svgicons.sparkk.fr
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
   }
+
+  .fullArticle__footer{
+    padding: 0 16rem;
+  }
+
+  .desktop{
+    display:block;
+  }
+
+  .fullArticle__floating{
+    max-width: 1000px!important;
+    margin-right: auto!important;
+  }
+
+  .fullArticle__menuFloat{
+    top: 150px;
+    visibility: visible;
+    opacity:1;
+    transition: visibility 0s linear 0s,opacity .3s 0s;
+    z-index: 100!important;
+    position: fixed!important;
+  }
+
+  .fullArticle__menuFloat ul{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+
+  .fullArticle__text{
+    text-align: center!important;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .fullArticle__buttonTweet .svg-icon path{
+    fill: #1da1f2;
+  } 
+
+  .fullArticle__buttonTweet .svg-icon {
+    width: 2em;
+    height: 2em;
+  }
+
+  .fullArticle__buttonFacebook .svg-icon path {
+    fill: #3b5998;
+  }
+
+  .fullArticle__buttonFacebook .svg-icon{
+    width: 2em;
+    height: 2em;
+  }
+
 
 }
 
