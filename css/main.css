@@ -993,7 +993,7 @@ SVG Icons - twitter svgicons.sparkk.fr
     border: 0;
     color: #fff;
     border-radius: 0 2px 2px 0;
-    width: 6rem;
+    width: 6.5rem;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
   }
@@ -1051,19 +1051,5 @@ SVG Icons - twitter svgicons.sparkk.fr
     height: 2em;
   }
 
-
-<<<<<<< Updated upstream
-}
-
 .Partage {display:flex; flex-direction: row; justify-content: space-around;}
 .Reseaux {list-style: none; flex-direction: row; display:flex;}
-=======
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
-};
-
-
-.Partage {display:flex; flex-direction: row;}
-.Reseaux {list-style: none; flex-direction: row; display:flex;}
->>>>>>> Stashed changes
