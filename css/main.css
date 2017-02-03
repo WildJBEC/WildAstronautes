@@ -471,7 +471,10 @@ input:checked ~ .Navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 1rem;
+
 
   /* Typography */
   font-family: 'Montserrat';
@@ -1015,7 +1018,18 @@ SVG Icons - twitter svgicons.sparkk.fr
   }
 
 
+<<<<<<< Updated upstream
 }
 
 .Partage {display:flex; flex-direction: row; justify-content: space-around;}
 .Reseaux {list-style: none; flex-direction: row; display:flex;}
+=======
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+};
+
+
+.Partage {display:flex; flex-direction: row;}
+.Reseaux {list-style: none; flex-direction: row; display:flex;}
+>>>>>>> Stashed changes
