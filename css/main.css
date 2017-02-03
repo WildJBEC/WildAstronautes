@@ -277,11 +277,12 @@ input:checked ~ .Navigation__list {
   -webkit-box-flex: initial;
       -ms-flex: initial;
           flex: initial;
+  text-align: center;
 }
 
 .Section__img img {
   /* Box model */
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -526,7 +527,7 @@ input:checked ~ .Navigation__list {
 
 .Section__articles {
   /* Box model */
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 
   /* Visual */
   background: url('../img/background-team.jpg');
@@ -753,6 +754,8 @@ SVG Icons - twitter svgicons.sparkk.fr
 
 .fullArticle__footer{
   padding: 0 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .fullArticle__foot {
@@ -761,15 +764,40 @@ SVG Icons - twitter svgicons.sparkk.fr
   font-family: 'Montserrat', sans-serif;
   justify-content: center;
   border-top: 5px solid #eaeaea;
-  margin: 0 0 1rem;
+  margin: 2rem 0;
+  width: 26rem;
 }
 
 .fullArticle__foot img{
   margin-left : 0.5rem;
 }
 
+@media (min-width: 41em) {
+  .Section__img img {
+    max-width: 50%;
+  }
 
-@media (min-width: 26em){
+  .Section__img {
+    text-align: center;
+  }
+
+  .fullArticle__desc {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .fullArticle__desc {
+    padding: 0 8rem;
+  }
+
+  .Article__item {
+    margin: 1.5rem 1.4rem;
+  }
+}
+
+
+@media (min-width: 65em){
 
   html {
     font-size: 16px;
@@ -793,6 +821,12 @@ SVG Icons - twitter svgicons.sparkk.fr
     -webkit-box-flex: 1.2;
         -ms-flex: 1.2;
             flex: 1.2;
+  }
+
+  .Section__img img {
+    /* Box model */
+    max-width: 100%;
+    height: auto;
   }
 
   .Section__desc {
@@ -884,7 +918,7 @@ SVG Icons - twitter svgicons.sparkk.fr
   }
 
   .fullArticle__desc {
-    padding: 0 16rem;
+    padding: 0 18rem;
   }
 
   .Section__fullArticle {
@@ -1001,7 +1035,7 @@ SVG Icons - twitter svgicons.sparkk.fr
 
   .fullArticle__buttonTweet .svg-icon path{
     fill: #1da1f2;
-  } 
+  }
 
   .fullArticle__buttonTweet .svg-icon {
     width: 2em;
