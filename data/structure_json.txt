@@ -41,3 +41,24 @@ un article sera composé de :
 	"art_liennasa":""
 
 }
+
+nouvelle structure:
+
+{
+		"id": "0",
+		"art_theme": "",
+		"date_art": "",
+		"date_trad": "",
+		"author": "",
+		"auteur": "",
+		"img_theme_": "",
+		"img_Small_url": "",
+		"img_Large_url": "",
+		"img_taille":"",
+		"img_alt": "",
+		"img_caption": "",
+		"img_credit": "",
+		"art_txt": "",
+		"art_titre": "",
+		"art_liennasa": ""
+	},
