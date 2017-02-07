@@ -16,12 +16,16 @@ class Article {
     this.img_caption = json.img_caption;
     this.img_credit = json.img_credit;
     this.art_txt = json.art_txt;
+    this.art_blo = this.extraitarticle(json.art_txt,400);
     this.art_titre = json.art_titre;
     this.art_liennasa = json.art_liennasa;
+    this.art_accueil = this.extraitarticle(json.art_txt,200)
   }
+
   console.log(`id article ${this.id}`);
-  extraitarticle () {
-    return this.art_text+ " " + this.art_liennasa; // trouver la fonction jquery certain nbre de mots
+   extraitarticle (sentence, nombre) {
+    let extrait = sentence.slice(0, nombre);
+    return extrait 
   }
 
 }
