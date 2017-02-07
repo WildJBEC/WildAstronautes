@@ -52,6 +52,7 @@ function refreshList(liste, articles) {
 					</div>
 				</li>`;
 
+
 // <script type="text/javascript">
 // function ajout() {
 //     document.getElementById('liste').innerHTML += "<li>objet</li>";
