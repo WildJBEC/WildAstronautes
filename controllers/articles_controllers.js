@@ -9,14 +9,14 @@ function refreshList(liste, articles) {
 		articles.data.forEach((article) => {
 	  //  appendTableRow(liste, article);
 	  console.log(document.querySelector('.Article__list'))
-	  document.querySelector('.Article__list').innerHTML = `<li class="Article__item">
+	  document.querySelector('.Article__list').innerHTML += `<li class="Article__item">
 					<figure class="Article__figure">
 						<img src="img/blog1_mini.jpg" alt="Launch conditions simulation"/>
 
 					</figure>
 					<div class="Article__content">
 						<a href=article.html class="Article__link">
-							<h2 class="Article__title">NASA Simulates Orion Spacecraft Launch Conditions for Crew</h2>
+							<h2 class="Article__title">${article.art_titre}</h2>
 						</a>
 						<p class="Article__desc">
 							In a lab at NASA’s Johnson Space Center in Houston, engineers simulated conditions that astronauts in space suits would experience when the Orion spacecraft is vibrating during launch atop the agency’s powerful …

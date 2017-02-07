@@ -3,7 +3,7 @@ class Article {
 
   constructor(json){
     this.id = json.id;
-    this.art_theme = json.art_theme.toUpperCase();
+    this.art_theme = json.art_theme;
     this.date_art = json.date_art;
     this.date_trad = json.date_trad;
     this.author = json.author;
@@ -22,10 +22,9 @@ class Article {
     this.art_accueil = this.extraitarticle(json.art_txt,200)
   }
 
-  console.log(`id article ${this.id}`);
-   extraitarticle (sentence, nombre) {
+   extraitarticle(sentence, nombre) {
     let extrait = sentence.slice(0, nombre);
-    return extrait 
+    return extrait ;
   }
 
 }
