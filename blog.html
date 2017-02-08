@@ -37,13 +37,13 @@
 
 		<section class="Section Section__search">
 			<ul class="Categories__list">
-				<li class="Category__item"><a href="#" class="Category__link">Planètes</a></li>
-				<li class="Category__item"><a href="#" class="Category__link">Galaxie</a></li>
-				<li class="Category__item"><a href="#" class="Category__link">Exploration</a></li>
+				<li class="Category__item" data-category="planetes"><a href="#" class="Category__link" >Planètes</a></li>
+				<li class="Category__item" data-category="galaxie"><a href="#" class="Category__link">Galaxie</a></li>
+				<li class="Category__item" data-category="exploration"><a href="#" class="Category__link">Exploration</a></li>
 				<!-- <li class="Category__item"><a href="#" class="Category__link Category__link--cross">X</a></li> -->
 			</ul>
-			<div class="Search__block">
-				<input type="text" name="" value=""><button type="button" name="button">Rechercher</button>
+			<div id="searchedArticles" class="Search__block">
+				<input id="searchInput" type="text" name="filter" placeholder="Rechercher" value="">
 			</div>
 		</section>
 
@@ -51,7 +51,7 @@
 
 			<ul class="Article__list">
 
-				
+
 
 			</ul>
 		</section>
