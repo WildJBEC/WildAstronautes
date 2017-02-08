@@ -20,7 +20,7 @@ function refreshList(liste, articles) {
 					</div>
 					<div class="Article__footer">
 
-						<a class="Article__button Button" data-target="article" href="article.html">Lire l'article &#8594;</a>
+						<a class="Article__button Button" href="article.html?id=${article.id}">Lire l'article &#8594;</a>
 
 						<ul class="Article__partage">
 							<li class="Partage__item Partage__item--facebook"><!--Facebook icone-->

@@ -3,14 +3,15 @@
 function refreshArticle(liste, articles) {
 	console.log("REFRESH_Article");
 	liste.innerHTML = "";
-    
+
+    let indiceArticle = window.location.search.split("?")[1].split("=")[1];
     let article = [];
     let currentArticle = (indice) => {
         article = articles.data[indice];
         return article;
     }
 
-    currentArticle(2);
+    currentArticle(indiceArticle);
 
 		// articles.data.forEach((article) => {
 	  //  appendTableRow(liste, article);
