@@ -162,13 +162,21 @@ function refreshList(liste, articles) {
 			$(document).ready(function () {
 				$('.Categories__list').on('click', '.Category__item', function() {
 					let category = $(this).closest('.Category__item').data('category');
-					// console.log(category);
-					// $('.Article__item').css('display', 'none');
-					// $('.' + category).css('display', 'flex');
-					$('.Article__item').hide();
-					$('.' + category).show();
+
+
+
+					if($(this).children('.Category__link').hasClass('Category__link--active')) {
+						$(this).children('.Category__link').removeClass('Category__link--active');
+						$('.Article__item').show();
 					}
-					// $('.Article__list').filter($(category));
+
+					else {
+						$('.Category__link').removeClass('Category__link--active');
+						$(this).children('.Category__link').addClass('Category__link--active');
+						$('.Article__item').hide();
+						$('.' + category).show();
+					}
+				}
 			)});
 
 			// button.addEventListener('click', (event) => {

@@ -969,6 +969,12 @@ SVG Icons - twitter svgicons.sparkk.fr
     color: #ffffff;
   }
 
+  .Category__link--active {
+    border: 1px solid #1A4875;
+    background-color: #1A4875;
+    color: #ffffff;
+  }
+
   .Category__link--cross {
     border: 1px solid #bbbbbb;
     color: #bbbbbb;
