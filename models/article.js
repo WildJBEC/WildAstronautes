@@ -15,7 +15,7 @@ class Article {
     this.img_alt = json.img_alt;
     this.img_caption = json.img_caption;
     this.img_credit = json.img_credit;
-    this.art_txt = json.art_txt;
+    this.art_txt = json.art_txt.replace(/\n/g, "</p><p>").replace(/\n/g, "</p><p>");
     this.art_blo = this.extraitarticle(json.art_txt,200);
     this.art_titre = json.art_titre;
     this.art_liennasa = json.art_liennasa;

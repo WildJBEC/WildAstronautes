@@ -5,8 +5,8 @@ function refreshList(liste, articles) {
 
 	  articles.data.forEach((article) => {
 	  //  appendTableRow(liste, article);
-	  console.log(document.querySelector('.Article__list'));
-	  console.log(`${article.art_theme}`);
+	  //console.log(document.querySelector('.Article__list'));
+	  //console.log(`${article.art_theme}`);
 	  document.querySelector('.Article__list').innerHTML += `<li class="Article__item ${article.art_theme}">
 					<figure class="Article__figure">
 						<img src=${article.img_Large_url} alt="${article.img_alt}"/>
@@ -85,9 +85,11 @@ function refreshList(liste, articles) {
 
 			let input = document.getElementById('searchInput');
         	input.addEventListener('keyup', (event) => {
+			  event.preventDefault();
 	          let value = event.currentTarget.value.split(" ").join(" ");
 	          if(value) {
 	              articles.filterArticles(value);
+				  refreshList(liste, articles);
 	          }
 	          articles.data = articles.unfilteredData;
 	        });
