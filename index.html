@@ -10,7 +10,7 @@
   </head>
   <body>
     <main class="Main">
-      <header class="Header">
+      <header class="Header" id="Header">
         <h1 class="Logo">Wild Astronautes</h1>
         <nav class="Navigation">
           <input type="checkbox" id="toggle-nav" aria-label="open/close navigation">
@@ -33,12 +33,15 @@
           <a id="btn-scrollup" href="#" class="thb-scrollup thb-go-top" style="display: block;">^</a>
         </nav>
       </header>
+        
+       <section id="accueil" class="Accueil" style="">
+        <!--<div class="innerContent">
 
-      <section id="accueil" class="Section Hero-unit" style="">
-          <a href="article.html" class="Hero-unit__link">
+         <a href="article.html" class="Hero-unit__link">
             <h2 class="Hero-unit__title">La prochaine mission de Cygnus prévue pour Mars</h2>
             <p class="Hero-unit__desc">Orbital ATK a accompli une mission importante pour la prochaine mission spatiale de la Station spatiale internationale de la NASA …</p>
-          </a>
+          </a> 
+        </div> -->
       </section>
 
       <section id="association" class="Section Section--introduction">
@@ -114,6 +117,11 @@
       </footer>
     </main>
     <!-- Bibliothèques JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="controllers/effetScroll.js"></script>
+<!-- <script type="text/javascript" src="controllers/loadPage.js"></script> -->
+    <script type="text/javascript" src="collections/articles.js"></script>
+    <script type="text/javascript" src="models/article.js"></script>
+    <script type="text/javascript" src="controllers/index_controller.js"></script>
   </body>
 </html>
