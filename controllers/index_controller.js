@@ -1,7 +1,6 @@
 'use strict'
 // remplissage page article
 function refreshArticle(liste, articles) {
-	console.log("REFRESH_Article");
 	liste.innerHTML = "";
 
     let indiceArticle = articles.data.length - 1;
@@ -25,7 +24,7 @@ function refreshArticle(liste, articles) {
          <a href="article.html?id=${article.id}" class="Hero-unit__link">
             <h2 class="Hero-unit__title">${article.art_titre}</h2>
             <p class="Hero-unit__desc">${article.art_blo}</p>
-          </a> 
+          </a>
         </div>`;
 
       console.log(document.querySelector('Header').nextSibling.innerHTML);

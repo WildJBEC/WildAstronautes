@@ -9,7 +9,7 @@ function refreshList(liste, articles) {
 	  //console.log(`${article.art_theme}`);
 	  document.querySelector('.Article__list').innerHTML += `<li class="Article__item ${article.art_theme}">
 					<figure class="Article__figure">
-						<img src=${article.img_Large_url} alt="${article.img_alt}"/>
+						<img src=${article.img_Small_url} alt="${article.img_alt}"/>
 
 					</figure>
 					<div class="Article__content">
@@ -88,14 +88,14 @@ function refreshList(liste, articles) {
 			  event.preventDefault();
 	          let value = event.currentTarget.value.split(" ").join(" ");
 
-	          if(value) {  
+	          if(value) {
 	          	if(articles.filterArticles(value).length === 0) {
-				  	liste.innerHTML = `<div style="color:white;margin:12rem;border:1px solid white;padding:20px;border-radius:5px;">Vous avez attéri sur une planète inconnue`;
+				  	liste.innerHTML = `<div style="color:white;margin:12rem;border:1px solid white;padding:20px;border-radius:5px;">Vous avez atterri sur une planète inconnue`;
 				  }
 	             else {articles.filterArticles(value);
 				  refreshList(liste, articles);
 				  console.log(articles.filterArticles(value).length);}
-				
+
 
 	          }
 	          articles.data = articles.unfilteredData;
