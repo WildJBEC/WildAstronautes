@@ -52,13 +52,10 @@ function refreshArticle(liste, articles) {
 					</ul>
 
 				<footer class="fullArticle__footer">
-
-					<div class="fullArticle__foot">
 						<p>
 							Article traduit depuis le site de la
 						</p>
 						<img src="img/NASA_logo.svg" alt="Nasa"></img>
-					</div>
 				</footer>
 			</article>`;
 };
