@@ -89,6 +89,19 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/montserrat-regular-webfont.eot');
+    src: url('../fonts/Montserrat/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Montserrat/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/Montserrat/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../fonts/Montserrat/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   /* Box model */
   display: -webkit-box;
@@ -177,8 +190,12 @@ h1, h2, h3 {
 .Navigation__list {
   position: absolute;
   width: 51vw;
-  transform: translateX(100%) translateZ(0);
+  -webkit-transform: translateX(100%) translateZ(0);
+          transform: translateX(100%) translateZ(0);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
   transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
   will-change: transform;
   list-style: none;
   top: 5rem;
@@ -189,7 +206,8 @@ h1, h2, h3 {
 }
 /* here's goes the slide effect */
 input:checked ~ .Navigation__list {
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 /* Button deco */
@@ -202,6 +220,9 @@ input:checked ~ .Navigation__list {
   height: 1.3rem;
   width: 3rem;
   background-color: transparent;
+  background-image: -webkit-linear-gradient(left, #ccc, #ccc),
+    -webkit-linear-gradient(left, #ccc, #ccc),
+    -webkit-linear-gradient(left, #ccc, #ccc);
   background-image: linear-gradient(to right, #ccc, #ccc),
     linear-gradient(to right, #ccc, #ccc),
     linear-gradient(to right, #ccc, #ccc);
@@ -359,9 +380,16 @@ input:checked ~ .Navigation__list {
 }
 
 .Hero-unit__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
   text-decoration: none;
 }
@@ -480,8 +508,12 @@ input:checked ~ .Navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 1rem;
 
   /* Typography */
@@ -498,9 +530,7 @@ input:checked ~ .Navigation__list {
   bottom: 55px;
   z-index: 10000;
   display: block;
-  text-indent: 0em;
   text-align: center;
-  text-decoration: none;
   font-size: 50px;
   padding-top: 7px;
   height: 32px;
@@ -544,9 +574,14 @@ input:checked ~ .Navigation__list {
 
 .Article__list {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 80rem;
   padding-left: 0;
 
@@ -556,10 +591,19 @@ input:checked ~ .Navigation__list {
 
 .Article__item {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 0 1 30em;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30em;
+          flex: 0 1 30em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 1.5rem .4rem;
   padding: 1rem;
 
@@ -569,10 +613,18 @@ input:checked ~ .Navigation__list {
 
 .Article__title {
   /* Box model */
-  margin: 0;
+  margin: 1.2rem 0 0 0;
 
   /* Typography */
   font-size: 1.4rem;
+}
+
+.Article__date {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: .4rem;
+    font-size: .9rem;
+    border-bottom: 3px solid #eaeaea;
+    color: #666666;
 }
 
 
@@ -594,7 +646,6 @@ input:checked ~ .Navigation__list {
   font-size: 1rem;
   line-height: 1.4;
   -webkit-hyphens: auto;
- -moz-hyphens: auto;
  -ms-hyphens: auto;
  hyphens: auto;
 
@@ -616,15 +667,28 @@ input:checked ~ .Navigation__list {
 
 .Article__footer {
   /* Boxe model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .Article__partage {
   /* Box model */
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction:row;
-  justify-content: flex-end;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:row;
+          flex-direction:row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding:0;
   margin-left: .2rem;
 
@@ -642,8 +706,12 @@ input:checked ~ .Navigation__list {
 
 .Partage__item {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 .2rem;
 
   /* Visual */
@@ -665,8 +733,12 @@ input:checked ~ .Navigation__list {
 
 .Partage__link {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: .6rem .7rem;
 
   /* Visual */
@@ -706,7 +778,6 @@ SVG Icons - twitter svgicons.sparkk.fr
   fill: #ffffff;
 }
 
-}
 .Article__item img {
   width: 100%;
 }
@@ -720,9 +791,16 @@ SVG Icons - twitter svgicons.sparkk.fr
 .fullArticle__header {
 	padding: 0 2rem;
 	margin: 3rem 0 1rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 	text-align: center;
 }
 
@@ -764,15 +842,23 @@ SVG Icons - twitter svgicons.sparkk.fr
 
 .fullArticle__footer{
   padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fullArticle__foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 2rem;
   font-family: 'Montserrat', sans-serif;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top: 5px solid #eaeaea;
   margin: 2rem 0;
   width: 26rem;
@@ -784,10 +870,19 @@ SVG Icons - twitter svgicons.sparkk.fr
 
 .Reseaux {
     list-style: none;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -916,7 +1011,8 @@ SVG Icons - twitter svgicons.sparkk.fr
     position: initial;
     width: 100%;
     padding: 0;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
     background-color: transparent;
 
   }
@@ -958,9 +1054,16 @@ SVG Icons - twitter svgicons.sparkk.fr
   .Section__search {
     /* Box model */
     height: 3.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: -0.1rem;
     position: fixed;
     width: 100%;
@@ -971,8 +1074,12 @@ SVG Icons - twitter svgicons.sparkk.fr
 
   .Categories__list {
     /* Box model */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     list-style: none;
     padding: 0;
   }
@@ -1015,6 +1122,8 @@ SVG Icons - twitter svgicons.sparkk.fr
   }
 
   .Search__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -1036,16 +1145,25 @@ SVG Icons - twitter svgicons.sparkk.fr
   }
 
   .fullArticle__menuFloat{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     list-style: none;
     position: fixed;
     top: 14rem;
     left: 4rem;
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #ffffff;
     border: 1px solid #eaeaea;
   }
@@ -1087,5 +1205,4 @@ SVG Icons - twitter svgicons.sparkk.fr
     width: 2em;
     height: 2em;
   }
-
 }

@@ -13,6 +13,7 @@ function refreshList(liste, articles) {
 
 					</figure>
 					<div class="Article__content">
+						<date class="Article__date">${article.date_art}</date>
 						<a href="article.html?id=${article.id}" class="Article__link">
 							<h2 class="Article__title">${article.art_titre}</h2>
 						</a>
