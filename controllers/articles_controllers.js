@@ -87,9 +87,16 @@ function refreshList(liste, articles) {
         	input.addEventListener('keyup', (event) => {
 			  event.preventDefault();
 	          let value = event.currentTarget.value.split(" ").join(" ");
-	          if(value) {
-	              articles.filterArticles(value);
+
+	          if(value) {  
+	          	if(articles.filterArticles(value).length === 0) {
+				  	liste.innerHTML = `<div style="color:white;margin:12rem;border:1px solid white;padding:20px;border-radius:5px;">Vous avez attéri sur une planète inconnue`;
+				  }
+	             else {articles.filterArticles(value);
 				  refreshList(liste, articles);
+				  console.log(articles.filterArticles(value).length);}
+				
+
 	          }
 	          articles.data = articles.unfilteredData;
 	        });
