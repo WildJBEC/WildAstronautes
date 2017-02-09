@@ -22,7 +22,7 @@ function refreshArticle(liste, articles) {
 	  liste.innerHTML =`<div class="Section Hero-unit" style="background-image:linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0)),url(${article.img_Large_url});background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;">
-         <a href="article.html" class="Hero-unit__link">
+         <a href="article.html?id=${article.id}" class="Hero-unit__link">
             <h2 class="Hero-unit__title">${article.art_titre}</h2>
             <p class="Hero-unit__desc">${article.art_blo}</p>
           </a> 
