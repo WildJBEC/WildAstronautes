@@ -79,7 +79,7 @@ svg:not(:root) {
 
 html {
   height: 100%;
-  font-size:14px;
+  font-size:16px;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   box-sizing: border-box;
@@ -131,6 +131,7 @@ body {
   /* Box model */
   height: 100%;
   width: 100%;
+  margin-top: 128px;
   margin-top: 8rem;
 }
 
@@ -152,8 +153,11 @@ h1, h2, h3 {
           align-items: center;
   position: fixed;
   width: 100%;
+  padding: 6.4px 32px;
   padding: .4rem 2rem;
+  margin-top: -64px;
   margin-top: -4rem;
+  height: 64px;
   height: 4rem;
 
   /* Typography */
@@ -166,6 +170,7 @@ h1, h2, h3 {
 
 .Logo {
   /* Typography */
+  font-size: 25.6px;
   font-size: 1.6rem;
   color: #1A4875;
 }
@@ -178,6 +183,7 @@ h1, h2, h3 {
 
 .Navigation__item {
   text-transform: uppercase;
+  padding: 16px 16px;
   padding: 1rem 1rem;
 }
 
@@ -198,7 +204,8 @@ h1, h2, h3 {
   transition: transform .2s, -webkit-transform .2s;
   will-change: transform;
   list-style: none;
-  top: 5rem;
+  top: 64px;
+  top: 4rem;
   background-color: rgba(26, 72, 117, 0.8);
   padding: 0;
   right: 0;
@@ -214,10 +221,14 @@ input:checked ~ .Navigation__list {
 .nav-button {
   display: block;
   position: absolute;
-  top: 2rem;
+  top: 22.4px;
+  top: 1.4rem;
+  right: 16px;
   right: 1rem;
   z-index: 1;
+  height: 20.8px;
   height: 1.3rem;
+  width: 48px;
   width: 3rem;
   background-color: transparent;
   background-image: -webkit-linear-gradient(left, #ccc, #ccc),
@@ -258,6 +269,7 @@ input:checked ~ .Navigation__list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 80px 32px;
   padding: 5rem 2rem;
 }
 
@@ -282,9 +294,11 @@ input:checked ~ .Navigation__list {
 .Section__title {
   /* Box model */
   margin: 0;
+  margin-bottom: 32px;
   margin-bottom: 2rem;
 
   /* Typography */
+  font-size: 28.8px;
   font-size: 1.8rem;
   text-align: center;
   text-transform: uppercase;
@@ -295,6 +309,7 @@ input:checked ~ .Navigation__list {
 
 .Section__img {
   /* Box model */
+  margin: 4.8px 16px 0;
   margin: .3rem 1rem 0;
   -webkit-box-flex: initial;
       -ms-flex: initial;
@@ -310,13 +325,16 @@ input:checked ~ .Navigation__list {
 
 .Section__desc {
   /* Box model */
+  min-width: 320px;
   min-width: 20rem;
+  max-width: 640px;
   max-width: 40rem;
   -webkit-box-flex: initial;
       -ms-flex: initial;
           flex: initial;
 
   /* Typography */
+  font-size: 19.2px;
   font-size: 1.2rem;
   text-align: justify;
   line-height: 1.6;
@@ -344,7 +362,9 @@ input:checked ~ .Navigation__list {
           align-items: center;
 
   height: 100%;
+  padding: 0 32px 64px;
   padding: 0 2rem 4rem;
+  margin-top: -64px;
   margin-top: -4rem;
 
   /* Visual */
@@ -362,20 +382,26 @@ input:checked ~ .Navigation__list {
 .Hero-unit__title {
   /* Box model */
   margin: 0;
+  min-width: 320px;
   min-width: 20rem;
+  max-width: 608px;
   max-width: 38rem;
 
   /* Typography */
+  font-size: 28.8px;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
 
 .Hero-unit__desc {
   /* Box model */
+  min-width: 320px;
   min-width: 20rem;
+  max-width: 560px;
   max-width: 35rem;
 
   /* Typography */
+  font-size: 19.2px;
   font-size: 1.2rem;
 }
 
@@ -434,6 +460,7 @@ input:checked ~ .Navigation__list {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 27em;
           flex: 0 1 27em;
+  margin: 32px 0;
   margin: 2rem 0;
 
   /* Visual */
@@ -448,6 +475,7 @@ input:checked ~ .Navigation__list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
 }
 
@@ -461,6 +489,7 @@ input:checked ~ .Navigation__list {
   margin: 0;
 
   /* Typography */
+  font-size: 25.6px;
   font-size: 1.6rem;
   text-align: center;
 
@@ -470,6 +499,7 @@ input:checked ~ .Navigation__list {
 
 .Biography__desc {
   /* Typography */
+  font-size: 19.2px;
   font-size: 1.2rem;
   line-height: 1.4;
   text-align: justify;
@@ -482,10 +512,13 @@ input:checked ~ .Navigation__list {
 /**** Boutons ****/
 .Button {
   /* Box model */
+  padding: 16px;
   padding: 1rem;
+  margin-top: 32px;
   margin-top: 2rem;
 
   /* Typography */
+  font-size: 14.4px;
   font-size: .9rem;
   font-family: 'Montserrat', sans-serif;
 
@@ -514,6 +547,7 @@ input:checked ~ .Navigation__list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 16px;
   padding: 0 1rem;
 
   /* Typography */
@@ -563,6 +597,7 @@ input:checked ~ .Navigation__list {
 
 .Section__articles {
   /* Box model */
+  padding: 32px 16px;
   padding: 2rem 1rem;
 
   /* Visual */
@@ -582,6 +617,7 @@ input:checked ~ .Navigation__list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1280px;
   max-width: 80rem;
   padding-left: 0;
 
@@ -604,7 +640,9 @@ input:checked ~ .Navigation__list {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 24px 6.4px;
   margin: 1.5rem .4rem;
+  padding: 16px;
   padding: 1rem;
 
   /* Visual */
@@ -613,15 +651,19 @@ input:checked ~ .Navigation__list {
 
 .Article__title {
   /* Box model */
+  margin: 19.2px 0 0 0;
   margin: 1.2rem 0 0 0;
 
   /* Typography */
+  font-size: 22.4px;
   font-size: 1.4rem;
 }
 
 .Article__date {
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 6.4px;
     padding-bottom: .4rem;
+    font-size: 14.4px;
     font-size: .9rem;
     border-bottom: 3px solid #eaeaea;
     color: #666666;
@@ -637,12 +679,14 @@ input:checked ~ .Navigation__list {
 }
 
 .Article__content {
+  padding: 16px 3.2px;
   padding: 1rem .2rem;
 
 }
 
 .Article__desc {
   /* Typography */
+  font-size: 16px;
   font-size: 1rem;
   line-height: 1.4;
   -webkit-hyphens: auto;
@@ -650,6 +694,7 @@ input:checked ~ .Navigation__list {
  hyphens: auto;
 
   /* Box model */
+  margin: 6.4px 0;
   margin: .4rem 0;
 }
 
@@ -657,7 +702,6 @@ input:checked ~ .Navigation__list {
   /* Box model */
   padding: 0;
   margin:0;
-  height: 13rem;
   overflow: hidden;
 }
 
@@ -690,6 +734,7 @@ input:checked ~ .Navigation__list {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding:0;
+  margin-left: 3.2px;
   margin-left: .2rem;
 
   /* Visual */
@@ -697,10 +742,12 @@ input:checked ~ .Navigation__list {
 
 .Article__button {
   /* Typography */
+  font-size: 12.8px;
   font-size: .8rem;
 
   /* Box model */
   margin: 0;
+  padding: 9.6px;
   padding: .6rem;
 }
 
@@ -712,6 +759,7 @@ input:checked ~ .Navigation__list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 3.2px;
   margin: 0 .2rem;
 
   /* Visual */
@@ -739,6 +787,7 @@ input:checked ~ .Navigation__list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 9.6px 11.2px;
   padding: .6rem .7rem;
 
   /* Visual */
@@ -756,9 +805,11 @@ input:checked ~ .Navigation__list {
 
 .Partage__socialname {
   /* Box model */
+  padding: 0 4.8px;
   padding: 0 .3rem;
 
   /* Typography */
+  font-size: 11.2px;
   font-size: .7rem;
   text-transform: uppercase;
 }
@@ -789,7 +840,9 @@ SVG Icons - twitter svgicons.sparkk.fr
 }
 
 .fullArticle__header {
+	padding: 0 32px;
 	padding: 0 2rem;
+	margin: 48px 0 16px;
 	margin: 3rem 0 1rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -804,30 +857,53 @@ SVG Icons - twitter svgicons.sparkk.fr
 	text-align: center;
 }
 
+.fullArticle__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
 
 .fullArticle__title{
+	margin: 0 0 16px;
 	margin: 0 0 1rem;
 	color: #1A4875;
+	font-size: 32px;
 	font-size: 2rem;
 	text-transform: none;
 }
 
 .fullArticle__infos {
 	border-bottom: 5px solid #eaeaea;
+	padding-bottom: 32px;
 	padding-bottom: 2rem;
-	margin: 0 0 2rem;
+	margin: 32px 0 32px;
+	margin: 2rem 0 2rem;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 }
 
 .fullArticle__desc {
+	padding: 0 32px;
 	padding: 0 2rem;
+	font-size: 20.8px;
 	font-size: 1.3rem;
   line-height: 1.6;
 }
 
 .fullArticle__img {
-	height: 27rem;
+	height: 480px;
+	height: 30rem;
 	margin: 0;
 	width: 100%;
 	background-position: center;
@@ -841,30 +917,24 @@ SVG Icons - twitter svgicons.sparkk.fr
 }
 
 .fullArticle__footer{
-  padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.fullArticle__foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 2rem;
   font-family: 'Montserrat', sans-serif;
+  border-top: 5px solid #eaeaea;
+  max-width: 416px;
+  max-width: 26rem;
+  padding-top: 32px;
+  padding-top: 2rem;
+  margin: 32px 0 32px;
+  margin: 2rem 0 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-top: 5px solid #eaeaea;
-  margin: 2rem 0;
-  width: 26rem;
 }
 
-.fullArticle__foot img{
+.fullArticle__footer img{
+  margin-left: 8px;
   margin-left : 0.5rem;
 }
 
@@ -888,6 +958,7 @@ SVG Icons - twitter svgicons.sparkk.fr
 }
 
 .Reseaux li {
+    padding: 6.4px;
     padding: .4rem;
 }
 
@@ -1134,10 +1205,6 @@ SVG Icons - twitter svgicons.sparkk.fr
     width: 14rem;
     padding: 0.4rem;
     font-size: .8rem;
-  }
-
-  .fullArticle__footer{
-    padding: 0 16rem;
   }
 
   .desktop{
