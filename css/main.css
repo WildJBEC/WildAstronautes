@@ -320,6 +320,7 @@ input:checked ~ .Navigation__list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
   height: 100%;
   padding: 0 2rem 4rem;
   margin-top: -5rem;
@@ -328,16 +329,19 @@ input:checked ~ .Navigation__list {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,0.9),rgba(0,0,0,0)),url(../img/article-image.jpg);
-  background-image:linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0)),url(../img/article-image.jpg);
+ /* background-image:linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0)),url(../img/article-image.jpg); */
   color: #ffffff;
+}
+
+.Accueil{
+  height: 100%;
 }
 
 .Hero-unit__title {
   /* Box model */
   margin: 0;
   min-width: 20rem;
-  max-width: 30rem;
+  max-width: 35rem;
 
   /* Typography */
   font-size: 1.8rem;
@@ -347,7 +351,7 @@ input:checked ~ .Navigation__list {
 .Hero-unit__desc {
   /* Box model */
   min-width: 20rem;
-  max-width: 30rem;
+  max-width: 35rem;
 
   /* Typography */
   font-size: 1.2rem;
@@ -964,6 +968,12 @@ SVG Icons - twitter svgicons.sparkk.fr
   }
 
   .Category__link:hover {
+    border: 1px solid #1A4875;
+    background-color: #1A4875;
+    color: #ffffff;
+  }
+
+  .Category__link--active {
     border: 1px solid #1A4875;
     background-color: #1A4875;
     color: #ffffff;
