@@ -89,6 +89,19 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/montserrat-regular-webfont.eot');
+    src: url('../fonts/Montserrat/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Montserrat/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/Montserrat/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../fonts/Montserrat/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   /* Box model */
   display: -webkit-box;
@@ -118,7 +131,7 @@ body {
   /* Box model */
   height: 100%;
   width: 100%;
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 h1, h2, h3 {
@@ -140,7 +153,8 @@ h1, h2, h3 {
   position: fixed;
   width: 100%;
   padding: .4rem 2rem;
-  margin-top: -5rem;
+  margin-top: -4rem;
+  height: 4rem;
 
   /* Typography */
   font-family: 'Montserrat', sans-serif;
@@ -176,8 +190,12 @@ h1, h2, h3 {
 .Navigation__list {
   position: absolute;
   width: 51vw;
-  transform: translateX(100%) translateZ(0);
+  -webkit-transform: translateX(100%) translateZ(0);
+          transform: translateX(100%) translateZ(0);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
   transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
   will-change: transform;
   list-style: none;
   top: 5rem;
@@ -188,7 +206,8 @@ h1, h2, h3 {
 }
 /* here's goes the slide effect */
 input:checked ~ .Navigation__list {
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 /* Button deco */
@@ -201,6 +220,9 @@ input:checked ~ .Navigation__list {
   height: 1.3rem;
   width: 3rem;
   background-color: transparent;
+  background-image: -webkit-linear-gradient(left, #ccc, #ccc),
+    -webkit-linear-gradient(left, #ccc, #ccc),
+    -webkit-linear-gradient(left, #ccc, #ccc);
   background-image: linear-gradient(to right, #ccc, #ccc),
     linear-gradient(to right, #ccc, #ccc),
     linear-gradient(to right, #ccc, #ccc);
@@ -323,7 +345,7 @@ input:checked ~ .Navigation__list {
 
   height: 100%;
   padding: 0 2rem 4rem;
-  margin-top: -5rem;
+  margin-top: -4rem;
 
   /* Visual */
   background-size: cover;
@@ -341,7 +363,7 @@ input:checked ~ .Navigation__list {
   /* Box model */
   margin: 0;
   min-width: 20rem;
-  max-width: 35rem;
+  max-width: 38rem;
 
   /* Typography */
   font-size: 1.8rem;
@@ -358,6 +380,16 @@ input:checked ~ .Navigation__list {
 }
 
 .Hero-unit__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
   text-decoration: none;
 }
@@ -476,10 +508,13 @@ input:checked ~ .Navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 1rem;
-
 
   /* Typography */
   font-family: 'Montserrat';
@@ -492,24 +527,21 @@ input:checked ~ .Navigation__list {
 .thb-scrollup {
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 55px;
   z-index: 10000;
   display: block;
-  text-indent: 0em;
   text-align: center;
-  text-decoration: none;
   font-size: 50px;
   padding-top: 7px;
   height: 32px;
   width: 32px;
-  color: #bbbbbb;
-  color: rgba(0, 0, 0, 0.4);
+  color: #cccccc;
   border: 2px solid;
   border-radius: 4px;
   cursor:pointer;
  }
 .thb-scrollup:hover {
-  color: black;
+  color: #cccccc;
 }
 .thb-scrollup:after {
   font-size: 22px;
@@ -542,9 +574,14 @@ input:checked ~ .Navigation__list {
 
 .Article__list {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 80rem;
   padding-left: 0;
 
@@ -554,10 +591,19 @@ input:checked ~ .Navigation__list {
 
 .Article__item {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 0 1 28em;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30em;
+          flex: 0 1 30em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 1.5rem .4rem;
   padding: 1rem;
 
@@ -567,10 +613,18 @@ input:checked ~ .Navigation__list {
 
 .Article__title {
   /* Box model */
-  margin: 0;
+  margin: 1.2rem 0 0 0;
 
   /* Typography */
   font-size: 1.4rem;
+}
+
+.Article__date {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: .4rem;
+    font-size: .9rem;
+    border-bottom: 3px solid #eaeaea;
+    color: #666666;
 }
 
 
@@ -591,6 +645,9 @@ input:checked ~ .Navigation__list {
   /* Typography */
   font-size: 1rem;
   line-height: 1.4;
+  -webkit-hyphens: auto;
+ -ms-hyphens: auto;
+ hyphens: auto;
 
   /* Box model */
   margin: .4rem 0;
@@ -600,7 +657,7 @@ input:checked ~ .Navigation__list {
   /* Box model */
   padding: 0;
   margin:0;
-  height: 14rem;
+  height: 13rem;
   overflow: hidden;
 }
 
@@ -610,15 +667,28 @@ input:checked ~ .Navigation__list {
 
 .Article__footer {
   /* Boxe model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .Article__partage {
   /* Box model */
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction:row;
-  justify-content: flex-end;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:row;
+          flex-direction:row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding:0;
   margin-left: .2rem;
 
@@ -636,8 +706,12 @@ input:checked ~ .Navigation__list {
 
 .Partage__item {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 .2rem;
 
   /* Visual */
@@ -659,8 +733,12 @@ input:checked ~ .Navigation__list {
 
 .Partage__link {
   /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: .6rem .7rem;
 
   /* Visual */
@@ -700,7 +778,6 @@ SVG Icons - twitter svgicons.sparkk.fr
   fill: #ffffff;
 }
 
-}
 .Article__item img {
   width: 100%;
 }
@@ -714,9 +791,16 @@ SVG Icons - twitter svgicons.sparkk.fr
 .fullArticle__header {
 	padding: 0 2rem;
 	margin: 3rem 0 1rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 	text-align: center;
 }
 
@@ -743,7 +827,7 @@ SVG Icons - twitter svgicons.sparkk.fr
 }
 
 .fullArticle__img {
-	height: 25rem;
+	height: 27rem;
 	margin: 0;
 	width: 100%;
 	background-position: center;
@@ -758,15 +842,23 @@ SVG Icons - twitter svgicons.sparkk.fr
 
 .fullArticle__footer{
   padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fullArticle__foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 2rem;
   font-family: 'Montserrat', sans-serif;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top: 5px solid #eaeaea;
   margin: 2rem 0;
   width: 26rem;
@@ -775,6 +867,35 @@ SVG Icons - twitter svgicons.sparkk.fr
 .fullArticle__foot img{
   margin-left : 0.5rem;
 }
+
+.Reseaux {
+    list-style: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.Reseaux li {
+    padding: .4rem;
+}
+
+.Reseaux .svg-icon {
+    width: 1.2em;
+    height: 1.2em;
+}
+
 
 @media (min-width: 41em) {
   .Section__img img {
@@ -812,7 +933,7 @@ SVG Icons - twitter svgicons.sparkk.fr
   }
 
   .Section__articles {
-    padding: 2rem 1rem;
+    padding: 5rem 1rem;
   }
 
   .Section__search {
@@ -890,8 +1011,9 @@ SVG Icons - twitter svgicons.sparkk.fr
     position: initial;
     width: 100%;
     padding: 0;
-    transform: none;
-    background-color: #ffffff;
+    -webkit-transform: none;
+            transform: none;
+    background-color: transparent;
 
   }
 
@@ -931,20 +1053,33 @@ SVG Icons - twitter svgicons.sparkk.fr
 
   .Section__search {
     /* Box model */
-    height: 4rem;
+    height: 3.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: -0.1rem;
+    position: fixed;
+    width: 100%;
 
     /* Visual */
-    background-color: #eaeaea;
+    background-color: rgba(255, 255, 255, 0.85);
   }
 
   .Categories__list {
     /* Box model */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     list-style: none;
     padding: 0;
   }
@@ -960,11 +1095,12 @@ SVG Icons - twitter svgicons.sparkk.fr
   .Category__link {
     border-radius: 2px;
     padding:.4rem .8rem;
-    border: 1px solid #ccc;
     color: #444444;
     font-family: 'Montserrat', sans-serif;
     font-size: .8rem;
     text-decoration: none;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
   }
 
   .Category__link:hover {
@@ -986,26 +1122,18 @@ SVG Icons - twitter svgicons.sparkk.fr
   }
 
   .Search__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
   .Search__block input {
-    border-radius: 2px 0 0 2px;
-    border: 0;
+    border-radius: 2px;
+    border: 1px solid #eaeaea;
     height: 2rem;
     width: 14rem;
     padding: 0.4rem;
-  }
-
-  .Search__block button {
-    height: 2rem;
-    background: #1A4875;
-    border: 0;
-    color: #fff;
-    border-radius: 0 2px 2px 0;
-    width: 6.5rem;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    font-size: .8rem;
   }
 
   .fullArticle__footer{
@@ -1016,32 +1144,49 @@ SVG Icons - twitter svgicons.sparkk.fr
     display:block;
   }
 
-  .fullArticle__floating{
-    max-width: 1000px!important;
-    margin-right: auto!important;
-  }
-
   .fullArticle__menuFloat{
-    top: 150px;
-    visibility: visible;
-    opacity:1;
-    transition: visibility 0s linear 0s,opacity .3s 0s;
-    z-index: 100!important;
-    position: fixed!important;
-  }
-
-  .fullArticle__menuFloat ul{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     list-style: none;
+    position: fixed;
+    top: 14rem;
+    left: 4rem;
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
   }
 
   .fullArticle__text{
     text-align: center!important;
     margin-bottom: 1rem;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: .8rem .8rem;
+    font-size: .7rem;
+    text-transform: uppercase;
+    background: #eaeaea;
   }
+
+  .fullArticle__buttonTweet {
+      padding: 1rem 0 0 .6rem;
+  }
+
+  .fullArticle__buttonFacebook {
+      padding: .4rem 0 .4rem .6rem;
+  }
+
 
   .fullArticle__buttonTweet .svg-icon path{
     fill: #1da1f2;
@@ -1060,6 +1205,4 @@ SVG Icons - twitter svgicons.sparkk.fr
     width: 2em;
     height: 2em;
   }
-
-.Partage {display:flex; flex-direction: row; justify-content: space-around;}
-.Reseaux {list-style: none; flex-direction: row; display:flex;}
+}
