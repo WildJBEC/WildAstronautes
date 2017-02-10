@@ -3,7 +3,7 @@
 function refreshArticle(liste, articles) {
 	liste.innerHTML = "";
 
-    let indiceArticle = articles.data.length - 1;
+    let indiceArticle = 0;
     let article = [];
     let currentArticle = (indice) => {
         article = articles.data[indice];
