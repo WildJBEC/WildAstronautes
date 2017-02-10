@@ -1,0 +1,76 @@
+﻿Bonjour, nous sommes une équipe de 4 personnes, constituée de Bénédicte, Elsa, Jérome et moi-même (Cédric).
+
+Nous travaillons actuellement sur la réalisation d’un site web pour l’association d’astronomie WildAstronautes
+
+Ce projet a une durée prévue de 4 semaines que nous avons découpé en 4 sprints en se basant sur la méthode agile Scrum.
+
+Nous sommes actuellement à la fin du projet: pour lequel j’ai endossé le rôle de Product Owner et Jérome celui de Scrum Master.
+
+
+﻿Page accueil:
+
+L'un des objectifs du site web de l'association est de mettre à disposition du public une sélection d'articles provenant du site de la Nasa et qui auront été traduits en français.
+ 
+je vais vous présenter le contenu de la page d'Accueil.
+
+Un affichage plein écran met en valeur la photo du dernier article publié par l'association wildAstronaute dans son blog.
+
+Si on clique dessus on accède à l'intégralité de l'article, mais nous verrons cela ultérieurement.
+
+Ensuite nous avons une section de présentation de l'association. 
+son but est de promouvoir l’association en incitant l'utilisateur à se connecter à leur page Facebook.
+
+puis la présentation des fondateurs.
+
+Nous pouvons naviguer d'une section à l'autre d'une manière non brutale grâce au menu de navigation
+Tout comme nous pouvons revenir doucement en haut de la page.
+
+Le menu de navigation nous permet d'accéder au blog (qui sera présenté par bénédicte)
+
+
+Page Blog:
+Dans cette page nous avons une série d'articles mis en ligne par l'association.
+Ils sont affichés sous forme de blocs, ce qui permettra une lecture aisée sur mobile.
+Une photo réduite, le titre et un extrait de l'article.
+
+L'utilisateur aura la possibilité de partager l'article sur Facebook, twitter ou par mail.
+Et ainsi faire connaître l’association de façon indirecte.
+
+Vous remarquerez en haut de page le menu de recherche :
+il permet de filtrer les articles par catégorie 
+chaque article peut appartenir à plusieurs catégories
+
+il permet aussi la recherche d’un mot clef dans le titre et le contenu de l’article, 
+	au fur et à mesure que vous tapez le mot.
+
+Le bouton “Lire la suite” permet d’accéder à l’intégralité de l’article, Je laisse la parole à Jérôme pour vous le présenter.
+
+
+Page Article:
+	
+Nous accédons à cette page de 2 manières
+soit par le boutons “lire l’article”  depuis la page Blog 
+soit depuis la page d'accueil en cliquant sur l’article affiché (c’est la publication la plus récente).
+
+Ici la photo est mise en valeur avec un affichage pleine page aussi
+
+si vous souhaitez revenir en Haut de la page pour pouvez le faire grâce au bouton en bas à droite de l’écran.
+
+Le lecteur pourra décider à tout moment de partager l’article grâce à la présence de ce menu flottant.
+
+
+Le pied de page, commun à tout le site, permet de contacter l’association via les réseaux sociaux.
+L’objectif étant d’être le plus visible afin d’attirer davantage d’adhérents.
+
+
+Site responsive: (présentation de la navigation Mobile indépendamment du texte, à la fin du texte Cédric se calera sur le direct et commentera ce qui est affiché, la suite de la naavigation)
+
+l’objectif de ce site web est de faciliter la promotion de l’association.
+
+
+Pour ce faire il a été développé en responsive,  
+ce qui veut dire qu’il est spécialement adapté pour être consulté sur Tablette et sur mobile. 
+
+Cela permettra de faire des présentations du site et des articles publiés lors des interventions dans les écoles.
+
+comme vous pouvez le constater la navigation est aisée et nous retrouvons  toutes les fonctionnalités présentées.
