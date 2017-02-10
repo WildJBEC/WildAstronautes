@@ -23,7 +23,7 @@ class Article {
   }
 
    extraitarticle(sentence, nombre) {
-    let extrait = sentence.slice(0, nombre) + " ...";
+    let extrait = sentence.slice(0, nombre) + "...";
     return extrait ;
   }
 
