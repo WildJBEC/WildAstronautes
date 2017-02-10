@@ -159,6 +159,7 @@ h1, h2, h3 {
   margin-top: -4rem;
   height: 64px;
   height: 4rem;
+  z-index: 2;
 
   /* Typography */
   font-family: 'Montserrat', sans-serif;
@@ -592,8 +593,27 @@ input:checked ~ .Navigation__list {
 /* CSS blog */
 
 .Section__search {
-  display: none;
+  /* Box model */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -0.1rem;
+  padding: .8rem;
+  position: fixed;
+  width: 100%;
+
+  /* Visual */
+  background-color: rgba(255, 255, 255, 0.85);
 }
+
+.Categories__list {display: none;}
 
 .Section__articles {
   /* Box model */
